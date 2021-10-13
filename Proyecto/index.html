@@ -6,34 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/nav_estilo.css" />
     <title>Proyecto</title>
 
 </head>
 
 <body>
     <header>
-        <!--imagen logo-->
-        <nav class="menu">
-            <ol>
-                <li><a href="./index.html">EL VINO</li></a>
-                <li><a href="./pages/variedades.html">VARIEDADES DE UVAS</a>
-                    <ul>
-                        <li><a href="./pages/variedades.html#tinta">TINTAS</a></li>
-                        <li><a href="./pages/variedades.html#blanca">BLANCAS</a></li>
-                    </ul>
-                </li>
-                <li><a href="./pages/aromas_y_defectos.html">AROMAS Y DEFECTOS</li></a>
-                <li><a href="./pages/guia_del_vino.html">GUIA DEL VINO</a>
-                    <ul>
-                        <li><a href="./pages/guia_del_vino.html#maridaje">MARIDAJE</li></a>
-                        <li><a href="./pages/guia_del_vino.html#servicio">SERVICIO</li></a>
-                        <li><a href="./pages/guia_del_vino.html#guarda">GUARDA</li></a>
-                    </ul>
-                </li>
-                <li><a href="./pages/como_catar.html">COMO CATAR</li></a>
-                <li><a href="./pages/contacto.html">CONTACTO</li></a>
-            </ol>
-        </nav>
+        <!-- imagen logo -->
+
+        <div class="navbar">
+            <a href="./index.html">TIPOS DE VINO</a>
+            <div class="dropdown">
+                <button class="dropbtn">VARIEDADES DE UVAS
+                </button>
+                <div class="dropdown-content">
+                    <a href="./pages/variedades.html#tinta">TINTAS</a>
+                    <a href="./pages/variedades.html#blanca">BLANCAS</a>
+                </div>
+            </div>
+            <a href="./pages/aromas_y_defectos.html">AROMAS Y DEFECTOS</a>
+            <div class="dropdown">
+                <button class="dropbtn">VARIEDADES DE UVAS
+                </button>
+                <div class="dropdown-content">
+                    <a href="./pages/guia_del_vino.html#maridaje">MARIDAJE</a>
+                    <a href="./pages/guia_del_vino.html#servicio">SERVICIO</a>
+                    <a href="./pages/guia_del_vino.html#guarda">GUARDA</a>
+                </div>
+            </div>
+            <a href="./pages/como_catar.html">COMO CATAR</a>
+            <a href="./pages/contacto.html">CONTACTO</a>
+
+        </div>
+
+
         <h1>EL VINO</h1>
     </header>
 
@@ -67,18 +74,18 @@
             <!--con imagen segun el color del vino-->
             <h4>CLASIFICACION POR COLOR</h4>
 
-            <p class="margenp"><b><i>TINTO:</b></i> Se elabora con uvas tintas, fermentando el mosto de la uva junto
+            <p><b><i>TINTO:</b></i> Se elabora con uvas tintas, fermentando el mosto de la uva junto
                 con la piel, ya que es ésta la que proporciona el color. Tiene una gama de colores entre rojo
                 rubí y el morado. <i><a href="pages/variedades.html#tinto"> Variedades de uvas tintas</a></i></p>
 
-            <p class="margenp"><i><b>BLANCO:</b></i> En su mayoría se elabora con uvas blancas, pero puede darse el
+            <p><i><b>BLANCO:</b></i> En su mayoría se elabora con uvas blancas, pero puede darse el
                 caso
                 de elaboraciones de uvas tintas, en las que el mosto no haya estado en contacto con la piel de
                 la uva. Este tipo de vino tiene una gama de colores que va desde el
                 amarillo pálido hasta caoba.<i><a href="pages/variedades.html#blanca"> Variedades de uvas
                         blancas</a></i></p>
 
-            <p class=" margenp"><i><b>ROSADO:</b></i> Es muy habitual encontrar elaboraciones con uvas tintas, en
+            <p><i><b>ROSADO:</b></i> Es muy habitual encontrar elaboraciones con uvas tintas, en
                 las que el mosto está en contacto con la piel, pero durante menos tiempo que en el caso
                 de los vinos tintos. También pueden encontrarse casos en los que se mezcla uva tinta y
                 blanca. Tiene una gama de colores desde el rosa salmón,
@@ -91,19 +98,19 @@
             <!--Joven,crianza, reverva, gran reserva-->
             <!--quizas con imagenes-->
 
-            <p class="margenp"><b><i>JOVEN:</i></b> Estos vinos han pasado directamente de sus depósitos a
+            <p><b><i>JOVEN:</i></b> Estos vinos han pasado directamente de sus depósitos a
                 la botella sin pasar por barrica. En estos
                 vinos son destacables los aromas primarios procedentes de la uva. Podemos encontrar vinos
                 jóvenes tanto entre los tintos como entre los blancos o los rosados.</p>
 
-            <p class="margenp"><b><i>CRIANZA:</i></b> Estos vinos tienen una crianza mínima en barrica de 6
+            <p><b><i>CRIANZA:</i></b> Estos vinos tienen una crianza mínima en barrica de 6
                 meses y hasta un máximo de 2 años en botella. Los vinos con crianza más comunes, son los
                 tintos, aunque cada vez es más frecuente encontrar vinos blancos con crianza.</p>
 
-            <p class="margenp"><b><i>RESERVA:</i></b> Son vinos con un mínimo de 12 meses en barrica y un máximo de
+            <p><b><i>RESERVA:</i></b> Son vinos con un mínimo de 12 meses en barrica y un máximo de
                 3 años en botella.</p>
 
-            <p class="margenp"><b><i>GRAN RESERVA:</i></b> Deben tener un mínimo de 2 años en barrica y
+            <p><b><i>GRAN RESERVA:</i></b> Deben tener un mínimo de 2 años en barrica y
                 un máximo de 5 años en botella.</p>
 
         </article>

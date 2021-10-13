@@ -69,6 +69,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
   background-color: #fae7a7bb;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .parrafo {
@@ -87,10 +88,6 @@ section article p {
   font-size: 20px;
   margin-left: 20px;
   margin-right: 20px;
-}
-.margenp {
-  margin-right: 60px;
-  font-size: 18px;
 }
 
 footer {
