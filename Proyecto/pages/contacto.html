@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <title>Proyecto</title>
+</head>
+
+<body>
+    <p><a href="../index.html">Volver al Inicio</a></p>
+    <h1>CONTACTO</h1>
+    <p>
+        Si quieres aprender más sobre como catar un vino o te quedo alguna duda, ponete en contacto conmigo.
+        Salud!
+    </p>
+
+    <form action="../../form-result.php" method="post" target="_blank">
+
+        <div class="divForm">
+            <label for="name">Nombre y apellido</label>
+
+            <input type="text" name="nombre_apellido">
+
+
+            <label for="correo">Correo electrónico</label>
+
+            <input type="email" name="correo">
+
+
+            <label for="asunto">Cata para:</label>
+            <select name="opcion">
+                <option hidden selected>Seleccione</option>
+                <option value="evento">Evento</option>
+                <option value="particular">Particular</option>
+            </select>
+
+
+
+            <label for="mensaje">Mensaje:</label>
+
+            <textarea rows="4" cols="100"></textarea>
+
+
+            <input type="checkbox" name="acepto">
+            <label for="acepto">Acepto que este sitio web almacene mi información enviada para que puedan responder a
+                mi consulta.</label>
+
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar formulario">
+            </div>
+        </div>
+
+
+</body>
+
+</html>
