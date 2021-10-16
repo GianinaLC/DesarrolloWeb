@@ -81,17 +81,12 @@ ul li.barrica {
   margin-bottom: 1rem;
 }
 
-.menu {
-  color: rgb(82, 21, 55);
-  font-size: 24px;
-  background-color: #bb8760;
-}
-
 body {
   font-family: "Barlow", sans-serif;
   background-color: #fae7a7bb;
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 20px;
 }
 
 .paragraph {
@@ -198,7 +193,7 @@ input[type="reset"]:hover {
   display: block;
 }
 
-.footerFont {
+.footer-font {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
