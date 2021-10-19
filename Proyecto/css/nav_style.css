@@ -33,6 +33,12 @@
   background-color: #A61103;
 }
 
+/*Me indica en que seccion estoy parada*/
+.activo{
+  border-bottom: 2px solid #A61103;
+  margin-bottom: 2px;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -58,3 +64,4 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+

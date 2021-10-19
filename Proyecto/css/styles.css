@@ -113,6 +113,7 @@ section article p {
   font-size: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  display: block;
 }
 
 /*
@@ -151,6 +152,17 @@ section article p {
   text-align: left;
   background-color: #0D0D0D;
   color: #eadeb8;
+}
+
+/*box modeling*/
+
+.div-wine-phases{
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display:inline-block;
+  border: 2px solid #594622;
+  text-align: center;
 }
 
 /*
@@ -213,3 +225,5 @@ input[type="reset"]:hover {
   text-align: center;
   font-size: 18px;
 }
+
+
