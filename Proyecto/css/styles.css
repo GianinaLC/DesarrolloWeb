@@ -161,9 +161,9 @@ section article p {
 }
 
 .div-wine-phases {
-  flex: 1; 
-  margin:10px;
+  flex: 1;
   padding: 1em;
+  margin: 20px 5px;
   background-color: #5946228c;
   text-align: center;
 }
