@@ -96,6 +96,7 @@ body {
   margin-left: 20px;
   margin-right: 20px;
   font-size: 20px;
+  display: block;
 }
 
 .paragraph {
@@ -114,6 +115,7 @@ section article p {
   margin-left: 20px;
   margin-right: 20px;
   display: block;
+  
 }
 
 /*
@@ -154,15 +156,27 @@ section article p {
   color: #eadeb8;
 }
 
-/*box modeling*/
+.row {
+  display: flex;
+}
 
-.div-wine-phases{
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  display:inline-block;
-  border: 2px solid #594622;
+.div-wine-phases {
+  flex: 1; 
+  margin:10px;
+  padding: 1em;
+  background-color: #5946228c;
   text-align: center;
+}
+
+.div-type-wines{
+  margin :30px;
+  border: 1rem inset #4e010131;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /*
@@ -209,12 +223,6 @@ input[type="reset"]:hover {
   background-color: #0D0D0D;
   padding: 20px 20px 80px 20px;
   margin: 50px 80px;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
 
 .footer-font {
