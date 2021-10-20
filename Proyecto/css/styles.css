@@ -1,6 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   color: #D9B26A;
   font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   background-color:#A61103 ;
   text-align: center;
   letter-spacing: 20px;
@@ -9,6 +16,7 @@ h1 {
 
 h2 {
   color: #594622;
+  margin: 20px;
   font-size: 38px;
   text-align: center;
   word-spacing: 4px;
@@ -17,6 +25,7 @@ h2 {
 
 h3 {
   color: #A61103;
+  margin: 20px;
   font-size: 25px;
   word-spacing: 4px;
   text-decoration: underline;
@@ -24,6 +33,7 @@ h3 {
 }
 
 h4 {
+  margin: 20px;
   font-weight: 300;
   color:#590202;
 }
@@ -93,8 +103,6 @@ body {
   font-family: 'Jost', sans-serif;
   color:#0D0D0D;
   background-color: #D9B26A;
-  margin-left: 20px;
-  margin-right: 20px;
   font-size: 20px;
   display: block;
 }
@@ -106,14 +114,16 @@ body {
   font-style: italic;
   font-weight: 300;
   text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 section article p {
   font-size: 20px;
-  margin-left: 20px;
+  margin-left: 25px;
   margin-right: 20px;
+  padding-bottom: 20px;
   display: block;
   
 }
@@ -124,7 +134,8 @@ section article p {
 
 .table-site {
   border-collapse: collapse;
-  width: 100%;
+  margin: 20px;
+  width: auto;
 }
 
 .table-site td,
@@ -162,8 +173,8 @@ section article p {
 
 .div-wine-phases {
   flex: 1;
-  padding: 1em;
-  margin: 20px 5px;
+  padding: 15px;
+  margin: 20px;
   background-color: #5946228c;
   text-align: center;
 }
@@ -176,6 +187,7 @@ section article p {
 .center {
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 20px;
   display: block;
 }
 
@@ -234,4 +246,33 @@ input[type="reset"]:hover {
   font-size: 18px;
 }
 
+/*
+  flexbox
+*/
 
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+.card-grape {
+  flex-basis: 400px;
+  margin: 25px 10px 30px 30px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+} 
+  
+.card-grape h3{
+  text-align: center;
+}
+
+/* cada card tendria un boton para ver mas del contenido ahi mismo en la pag
+.card button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+*/
