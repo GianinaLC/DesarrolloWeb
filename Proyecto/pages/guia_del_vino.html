@@ -1,214 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/nav_style.css" />
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Proyecto</title>
-</head>
+    <title>Boostrap</title>
 
 <body>
-    <div class="navbar">
-        <a href="../index.html#tipos">TIPOS DE VINOS</a>
-        <div class="dropdown">
-            <button class="dropbtn">VARIEDADES DE UVAS
+    <nav class="navbar navbar-light bg-light">
+        <div class="container justify-content-center">
+            <a class="navbar-brand m-2" href="../index.html"><img src="../images/entre-copas-prueba.png" alt="logo" class="rounded-circle"></a>
+        </div>
+      </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fs-5 sticky-top p-0">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="dropdown-content">
-                <a href="./variedades.html#tinta">TINTAS</a>
-                <a href="./variedades.html#blanca">BLANCAS</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link pe-2" aria-current="page" href="../index.html#tipos">TIPOS DE VINOS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle pe-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  VARIEDADES DE UVAS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./variedades.html#tinta">TINTAS</a></li>
+                  <li><a class="dropdown-item" href="./variedades.html#blanca">BLANCAS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active pe-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  GUIA DEL VINO
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./guia_del_vino.html#maridaje">MARIDAJE</a></li>
+                  <li><a class="dropdown-item" href="./guia_del_vino.html#servicio">SERVICIO</a></li>
+                  <li><a class="dropdown-item" href="./guia_del_vino.html#guarda">GUARDA</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-2" href="./aromas_y_defectos.html">AROMAS Y DEFECTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-2" href="./como_catar.html">COMO CATAR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-2" href="./contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+            <div class="d-flex flex-row justify-content-end">
+                <a href="../index.html" class="icon-glass pe-2"><i class="fas fa-glass-cheers"></i></a>
             </div>
         </div>
-        <a href="./aromas_y_defectos.html">AROMAS Y DEFECTOS</a>
-        <!-- colocar luego la imagen del logo que me llevara al home -->
-        <a href="../index.html">HOME-LOGO</a>
-        <div class="dropdown activo" >
-            <button class="dropbtn">GUIA DEL VINO
-            </button>
-            <div class="dropdown-content">
-                <a href="./guia_del_vino.html#maridaje">MARIDAJE</a>
-                <a href="./guia_del_vino.html#servicio">SERVICIO</a>
-                <a href="./guia_del_vino.html#guarda">GUARDA</a>
-            </div>
-        </div>
-        <a href="./como_catar.html">COMO CATAR</a>
-        <a href="./contacto.html">CONTACTO</a>
-    </div>
+      </nav>
 
-    <h1>GUIA DEL VINO</h1>
-
-    <section>
-        <article>
-            <h2 id="maridaje">MARIDAJE</h2>
-            <p class="paragraph">El maridaje entre el vino y la comida es el proceso de unir un alimento con un vino con
-                la
-                intención de realzar
-                el placer de comerlos.
-            </p>
-            <img src="../images/maridaje-vino-y-comidas.jpg" alt="comida-vino" class="center">
-            
-            <table class="table-site" border="2" cellpadding="10" cellspacing="4">
-                <tr>
-                    <!--inicio de fila-->
-                    <th></th>
-                    <th>Sauvignon Blanc</th>
-                    <th>Chardonnay</th>
-                    <th>Torrontés</th>
-                    <th>Pinot Noir</th>
-                    <th>Malbec</th>
-                    <th>Merlot</th>
-                    <th>Cabernet Sauvignon</th>
-                </tr>
-                <!--cierre de fila-->
-
-                <tr>
-                    <!--inicio de otra fila-->
-                    <th>QuesoS / Nueces</th>
-                    <td>Queso de cabra</td>
-                    <td>Queso asiago, Almendras</td>
-                    <td> Queso de cabra, Mozarela, Nueces tostadas</td>
-                    <td>Queso de cabra, Queso Brie, Nuez</td>
-                    <td>Queso asagio, Gouda</td>
-                    <td>Parmesano, Castañas</td>
-                    <td>Cheddar, Nuez</td>
-                </tr>
-                <!--cierre de la segunda fila-->
-
-                <tr>
-                    <!--inicio de otra fila-->
-                    <th>CarneS / Aves</th>
-                    <td>Pollo, Pavo</td>
-                    <td>Terneta, Pollo, Lomo de cerdo</td>
-                    <td>Carne ahumada, Pollo grillado, Chorizo</td>
-                    <td>Cordero, Ternera, Pollo rostizado</td>
-                    <td>Hamburguesa, Pato, Costillas de cerdo</td>
-                    <td>Carne grillada de res</td>
-                    <td>Venado, Lomo, Estofado</td>
-                </tr>
-
-                <tr>
-                    <!--inicio de otra fila-->
-                    <th>Comida del Mar</th>
-                    <td>Lenguado, Ostras, Vieiras</td>
-                    <td>Mero, Camarón, Cangrejo</td>
-                    <td>Sushi, Lubina, Dorado grillado</td>
-                    <td>Pez reloj, Atún</td>
-                    <td>Mero grillado, Pez espada</td>
-                    <td>Pez espada grillado, Atún</td>
-                    <td>Atún grillado</td>
-                </tr>
-
-                <tr>
-                    <!--inicio de otra fila-->
-                    <th>Vegetales / Frutas</th>
-                    <td>Citricos, Manzana verde, Espárragos</td>
-                    <td>Papas, Manzanas, Calabacin</td>
-                    <td>Mango, Piña, Ensalada verde</td>
-                    <td>Hongos, Frutos secos, Higos</td>
-                    <td>Espinaca, Papa asada, arándanos</td>
-                    <td>Cebolla caramelizada, Ciruela</td>
-                    <td>Cerezas negras, Brocoli, Tomate</td>
-                </tr>
-                <tr>
-                    <!--inicio de otra fila-->
-                    <th>Hierbas / Especias</th>
-                    <td>Cebollín, Estragón, Cilantro</td>
-                    <td>Romero, Jengibre</td>
-                    <td>Orégano, Albahaca, Ajo</td>
-                    <td>Nuez moscada, Canela, Clavo</td>
-                    <td>Romero, Pimienta negra</td>
-                    <td>Menta, Romero, Enebro</td>
-                    <td>Romero, Enebro, Lavanda</td>
-                </tr>
-                <tr>
-                    <!--inicio de otra fila-->
-                    <th>Salsas</th>
-                    <td>Citricas, Suaves</td>
-                    <td>Dulces, Picante, Barbacue</td>
-                    <td>Blanca, Asiática, Mani</td>
-                    <td>Hongos, Ligera a media, Roja</td>
-                    <td>Barbecue, Mole negro</td>
-                    <td>Boloñesa</td>
-                    <td>Espesas, Tomate</td>
-                </tr>
-                <tr>
-                    <!--inicio de otra fila-->
-                    <th>Postres</th>
-                    <td>Pie de limón</td>
-                    <td>Budín de banana, Budín de vainilla</td>
-                    <td>Torta de queso, Tiramisu</td>
-                    <td>Creme Brulee, Chocolate blanco</td>
-                    <td>Budín de banana, Chocolate, Dulce de leche</td>
-                    <td>Chocolate negro, Bayas, Fondue</td>
-                    <td>Chocolate, Café expreso, Helado</td>
-                </tr>
-
-            </table>
-
-        <h2 id="servicio">SERVICIO</h2>
-            <img src="../images/servicio-vino.jpg" alt="comida-vino" class="center">
-
-            <h3>TEMPERATURA</h3>
-                <p>
-                    La temperatura influye considerablemente en el sabor, aroma y matices.
+    <main>
+        <h1>GUIA DEL VINO</h1>
+        <section>
+            <article class="container-fluid">
+                <h2 id="maridaje">MARIDAJE</h2>
+                <p class="text-center">
+                    El maridaje entre el vino y la comida es el proceso de unir un alimento con un vino con
+                    la intención de realzar el placer de comerlos.
                 </p>
 
-                <p>
-                    Para los tintos, se tiene en cuenta la crianza. En tintos jóvenes lo idóneo es que ronden entre 13 y 15 grados.
-                    En crianzas, entre 16 y 18 grados. Para reservas, grandes reservas y vinos de autor, a partir de 19
-                    grados. Los rosados deben servirse bien fríos (6 grados aproximadamente). Esto también es aplicable a los
-                    blancos jóvenes. Por su parte, los blancos con crianza necesitan temperaturas un poco más altas (unos 10
-                    grados).
-                </p>
+                <img src="../images/maridaje-vino-y-comidas.jpg" alt="comida-vino" class="mx-auto d-block img-fluid" >
+                    
+                    <!--tabla con grid-->
+                    <div class="contenedor-maridaje">
+                        <div class="table-header"></div>
+                        <div class="table-header">Sauvignon Blanc</div>
+                        <div class="table-header">Chardonnay</div>
+                        <div class="table-header">Torrontés</div>
+                        <div class="table-header">Pinot Noir</div>
+                        <div class="table-header">Malbec</div>
+                        <div class="table-header">Merlot</div>
+                        <div class="table-header">Cabernet Sauvignon</div>
+                        <!--Nueva Fila-->
+                        <div class="table-item">Quesos / Nueces</div>
+                        <div class="table-item">Queso de cabra</div>
+                        <div class="table-item">Queso asiago, Almendras</div>
+                        <div class="table-item">Queso de cabra, Mozarela, Nueces tostadas</div>
+                        <div class="table-item">Queso de cabra, Queso Brie, Nuez</div>
+                        <div class="table-item">Queso asagio, Gouda</div>
+                        <div class="table-item">Parmesano, Castañas</div>
+                        <div class="table-item">Cheddar, Nuez</div>
+                        <!--Nueva Fila-->
+                        <div class="table-item">Carnes / Aves</div>
+                        <div class="table-item">Pollo, Pavo</div>
+                        <div class="table-item">Terneta, Pollo, Lomo de cerdo</div>
+                        <div class="table-item">Carne ahumada, Pollo grillado, Chorizo</div>
+                        <div class="table-item">Cordero, Ternera, Pollo rostizado</div>
+                        <div class="table-item">Hamburguesa, Pato, Costillas de cerdo</div>
+                        <div class="table-item">Carne grillada de res</div>
+                        <div class="table-item">Venado, Lomo, Estofado</div>
+                        <!--Nueva Fila-->
+                        <div class="table-item">Comida del Mar</div>
+                        <div class="table-item">Lenguado, Ostras, Vieiras</div>
+                        <div class="table-item">Mero, Camarón, Cangrejo</div>
+                        <div class="table-item">Sushi, Lubina, Dorado grillado</div>
+                        <div class="table-item">Pez reloj, Atún</div>
+                        <div class="table-item">Mero grillado, Pez espada</div>
+                        <div class="table-item">Pez espada grillado, Atún</div>
+                        <div class="table-item">Atún grillado</div>
+                        <!--Nueva Fila-->
+                        <div class="table-item">Vegetales / Frutas</div>
+                        <div class="table-item">Citricos, Manzana verde, Espárragos</div>
+                        <div class="table-item">Papas, Manzanas, Calabacin</div>
+                        <div class="table-item">Mango, Piña, Ensalada verde</div>
+                        <div class="table-item">Hongos, Frutos secos, Higos</div>
+                        <div class="table-item">Espinaca, Papa asada, arándanos</div>
+                        <div class="table-item">Cebolla caramelizada, Ciruela</div>
+                        <div class="table-item">Cerezas negras, Brocoli, Tomate</div>
+                        <!--Nueva Fila-->
+                        <div class="table-item">Hierbas / Especias</div>
+                        <div class="table-item">Cebollín, Estragón, Cilantro</div>
+                        <div class="table-item">Romero, Jengibre</div>
+                        <div class="table-item">Orégano, Albahaca, Ajo</div>
+                        <div class="table-item">Nuez moscada, Canela, Clavo</div>
+                        <div class="table-item">Romero, Pimienta negra</div>
+                        <div class="table-item">Menta, Romero, Enebro</div>
+                        <div class="table-item">Romero, Enebro, Lavanda</div>
+                        <!--Nueva Fila-->
+                        <div class="table-item">Salsas</div>
+                        <div class="table-item">Citricas, Suaves</div>
+                        <div class="table-item">Dulces, Picante, Barbacue</div>
+                        <div class="table-item">Blanca, Asiática, Mani</div>
+                        <div class="table-item">Hongos, Ligera a media, Roja</div>
+                        <div class="table-item">Barbecue, Mole negro</div>
+                        <div class="table-item">Boloñesa</div>
+                        <div class="table-item">Espesas, Tomate</div>
+                        <!--Nueva Fila-->
+                        <div class="table-item">Postres</div>
+                        <div class="table-item">Pie de limón</div>
+                        <div class="table-item">Budín de banana, Budín de vainilla</div>
+                        <div class="table-item">Torta de queso, Tiramisu</div>
+                        <div class="table-item">Creme Brulee, Chocolate blanco</div>
+                        <div class="table-item">Budín de banana, Chocolate, Dulce de leche</div>
+                        <div class="table-item">Chocolate negro, Bayas, Fondue</div>
+                        <div class="table-item">Chocolate, Café expreso, Helado</div>
+                    </div>
+            </article>
 
-            <h3>DESCORCHE</h3>
-                <p>
-                    ¿Qué es el descorche? El descorche es el acto de abrir una botella de vino, una auténtica ceremonia para los aficionados a
-                    esta bebida. En el mundo de la gastronomía, también se llama descorche al servicio pago de abrir una botella de vino
-                    llevada por el comensal que ofrecen algunos restaurantes. Sin embargo, se recomienda siempre llamar por teléfono
-                    antes de ir al restaurante para preguntar tanto si hacen descorche como el precio del mismo, ya que esta
-                    opción no siempre es conveniente para el consumidor.
-                </p>
+            <article class="container">
+                <h2 id="servicio">SERVICIO</h2>
+                <img src="../images/servicio-vino.jpg" alt="comida-vino" class="mx-auto d-block img-fluid">
 
-                <p>
-                    ¿Cómo se debe descorchar una botella de vino? El primer paso para descorchar una botella es colocarla en posición vertical y cortar la cápsula que
-                    envuelve al cuello de la botella y al corcho. Este corte se realiza por debajo del gollete de la botella,
-                    manteniéndola quieta y moviendo el objeto que se utilice para cortar la cápsula que puede ser un sacacorchos, un
-                    cuchillo pequeño o bien un auténtico cortacápsulas.
-                    El segundo paso consiste en dejar el corcho completamente limpio –sin restos de la cápsula- y proceder a
-                    quitarlo con un sacacorchos.
-                    Si al extraer el tapón el cuello de la botella presenta restos o impurezas es necesario quitarlos con un
-                    paño limpio para disfrutar del vino correctamente.
-                    Por último, se debe observar atentamente el corcho para ver si tiene filtraciones y si se encuentra en
-                    buena forma (sin manchas o rastros de humedad). Un corcho en buen estado es garantía de un vino en óptimas
-                    condiciones de conservación.
-                </p>
+                    <h3>TEMPERATURA</h3>
+                        <p>
+                            La temperatura influye considerablemente en el sabor, aroma y matices.
+                        </p>
 
-                <p>
-                    ¿Varía el descorche y servicio según el vino? El descorche y el servicio de vinos varían de acuerdo al tipo o estilo de vino que se va a beber:
-                    Los vinos tintos jóvenes se descorchan y se sirven al momento de beberlos siguiendo con el protocolo
-                    detallado anteriormente.
-                    Los vinos blancos o rosados que se beben a menor temperatura se presentan en una frapera con agua y
-                    hielo para mantener su correcta temperatura a lo largo de la comida.
-                </p>
+                        <p>
+                            Para los tintos, se tiene en cuenta la crianza. En tintos jóvenes lo idóneo es que ronden entre 13 y 15 grados.
+                            En crianzas, entre 16 y 18 grados. Para reservas, grandes reservas y vinos de autor, a partir de 19 grados. Los rosados deben servirse bien fríos (6 grados aproximadamente). Esto también es aplicable a los blancos jóvenes. Por su parte, los blancos con crianza necesitan temperaturas un poco más altas (unos 10 grados).
+                        </p>
 
+                    <h3>DESCORCHE</h3>
+                        <p>
+                            ¿Qué es el descorche? El descorche es el acto de abrir una botella de vino, una auténtica ceremonia para los aficionados a
+                            esta bebida. En el mundo de la gastronomía, también se llama descorche al servicio pago de abrir una botella de vino
+                            llevada por el comensal que ofrecen algunos restaurantes. Sin embargo, se recomienda siempre llamar por teléfono
+                            antes de ir al restaurante para preguntar tanto si hacen descorche como el precio del mismo, ya que esta
+                            opción no siempre es conveniente para el consumidor.
+                        </p>
 
-        <h2 id="guarda">GUARDA</h2>
-            <img src="../images/vino-guarda.jpg" alt="comida-vino" class="center">
+                        <p>
+                            ¿Cómo se debe descorchar una botella de vino? El primer paso para descorchar una botella es colocarla en posición vertical y cortar la cápsula que
+                            envuelve al cuello de la botella y al corcho. Este corte se realiza por debajo del gollete de la botella,
+                            manteniéndola quieta y moviendo el objeto que se utilice para cortar la cápsula que puede ser un sacacorchos, un
+                            cuchillo pequeño o bien un auténtico cortacápsulas.
+                            El segundo paso consiste en dejar el corcho completamente limpio –sin restos de la cápsula- y proceder a
+                            quitarlo con un sacacorchos.
+                            Si al extraer el tapón el cuello de la botella presenta restos o impurezas es necesario quitarlos con un
+                            paño limpio para disfrutar del vino correctamente.
+                            Por último, se debe observar atentamente el corcho para ver si tiene filtraciones y si se encuentra en
+                            buena forma (sin manchas o rastros de humedad). Un corcho en buen estado es garantía de un vino en óptimas
+                            condiciones de conservación.
+                        </p>
 
-                <p>
-                    Uno de los mayores problemas de todos aquellos a los que nos gusta el vino, es como conservar el vino en
-                    casa, para que no pierda sus propiedades y su calidad. Es por esa razón que desde Tour y Vino os quiero dar
-                    unos consejos que os ayuden con la conservación del vino en vuestras casas.
-                    En primer lugar, os voy a detallar las condiciones básicas que es necesario cumplir, para una correcta
-                    conservación del vino, independientemente del lugar donde se guarde el vino.
-                </p>
+                        <p>
+                            ¿Varía el descorche y servicio según el vino? El descorche y el servicio de vinos varían de acuerdo al tipo o estilo de vino que se va a beber:
+                            Los vinos tintos jóvenes se descorchan y se sirven al momento de beberlos siguiendo con el protocolo detallado anteriormente.
+                            Los vinos blancos o rosados que se beben a menor temperatura se presentan en una frapera con agua y hielo para mantener su correcta temperatura a lo largo de la comida.
+                        </p>
+            </article>
+
+            <article class="container">
+                <h2 id="guarda">GUARDA</h2>
+                <img src="../images/vino-guarda.jpg" alt="comida-vino" class="mx-auto d-block img-fluid">
+                    <p>
+                        Uno de los mayores problemas de todos aquellos a los que nos gusta el vino, es como conservar el vino en
+                        casa, para que no pierda sus propiedades y su calidad. Es por esa razón que desde Tour y Vino os quiero dar
+                        unos consejos que os ayuden con la conservación del vino en vuestras casas.
+                        En primer lugar, os voy a detallar las condiciones básicas que es necesario cumplir, para una correcta
+                        conservación del vino, independientemente del lugar donde se guarde el vino.
+                    </p>
 
                     <ul class="barrica">
                         <li class="barrica">Es necesario mantener una temperatura constante con una variación máxima diaria de 1ºC.</li>
@@ -218,38 +215,52 @@
                         <li class="barrica">Colocar las botellas separadas individualmente para que al sacar una, no sea necesario mover otras. Una buena opción es un botellero.</li>
                     </ul>
 
-                <p>
-                    Las botellas en horizontal. Parece ser que hay investigaciones al respecto que contradicen esa
-                    teoría.
-                    Según unas investigaciones llevadas a cabo por la mayor corchera del mundo (Amorim), parece ser que en el
-                    espacio que hay entre el vino y el corcho, la humedad alcanza casi el 100%. Por lo que es una humedad más que
-                    suficiente para la conservación del corcho. Aseguran además que el mantener el vino en contacto con el corcho,
-                    podría acelerar el deterioro del tapón.
-                </p>
+                    <p>
+                        Las botellas en horizontal. Parece ser que hay investigaciones al respecto que contradicen esa
+                        teoría.
+                        Según unas investigaciones llevadas a cabo por la mayor corchera del mundo (Amorim), parece ser que en el
+                        espacio que hay entre el vino y el corcho, la humedad alcanza casi el 100%. Por lo que es una humedad más que
+                        suficiente para la conservación del corcho. Aseguran además que el mantener el vino en contacto con el corcho,
+                        podría acelerar el deterioro del tapón.
+                    </p>
 
-                <p>
-                    Ahora vamos a la práctica. ¿Cuanto tiempo como máximo ha pasado una botella de vino en tu casa sin que
-                    la abrieras? La respuesta en la mayoría de los casos no supera un año. Entonces, ¿como pongo las botellas?
-                    Para estos casos, y teniendo en cuenta las investigaciones, pues da igual en que posición las coloques,
-                    porque estas investigaciones están hechas para la conservación del vino durante varios años, 5, 10 o más.
-                </p>
+                    <p>
+                        Ahora vamos a la práctica. ¿Cuanto tiempo como máximo ha pasado una botella de vino en tu casa sin que
+                        la abrieras? La respuesta en la mayoría de los casos no supera un año. Entonces, ¿como pongo las botellas?
+                        Para estos casos, y teniendo en cuenta las investigaciones, pues da igual en que posición las coloques,
+                        porque estas investigaciones están hechas para la conservación del vino durante varios años, 5, 10 o más.
+                    </p>
+            </article>
+        </section>
+    </main>
 
-        </article>
-    </section>
+    <!--footer-------------------------------------------------------------------------------------------------------------------->
+    <footer class="py-2">
+        <div class="container-fluid">
+            <div class="row">
 
-    <footer class="footer">
-        <!--pie de pagina, iconos de redes-->
-        <p>
-            Comparte en redes sociales y síguenos
-        </p>
-        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-        <p>
-            Copyright2021
-        </p>
+                <div class="col-md-6 col-xs-12">
+                    <div class="col-12">
+                        <p class="fs-4 text-center m-0">Comparte en redes y seguinos</p>
+                        <p class="fs-4 text-center m-0">Copyright 2021</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xs-12">
+                    <div class="col-12 d-flex flex-row justify-content-around ">
+                        <a href="https://www.facebook.com/" class="icon-face transform-image"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="icon-ig transform-image"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/" class="icon-tw transform-image"><i class="fab fa-twitter"></i></a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
     </footer>
-
+    
+      <script src="../libs/jquery/jquery-3.6.0.min.js"></script>
+      <script src="../libs/bootstrap/js/bootstrap.min.js"></script> 
+    
 </body>
 
 </html>

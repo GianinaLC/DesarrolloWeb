@@ -5,54 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/nav_style.css" />
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Proyecto</title>
+    <title>Boostrap</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="../index.html#tipos">TIPOS DE VINOS</a>
-        <div class="dropdown activo">
-            <button class="dropbtn" class="activo">VARIEDADES DE UVAS
+    <nav class="navbar navbar-light bg-light">
+        <div class="container justify-content-center">
+            <a class="navbar-brand m-2" href="../index.html"><img src="../images/entre-copas-prueba.png" alt="logo" class="rounded-circle"></a>
+        </div>
+      </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fs-5 sticky-top p-0">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="dropdown-content">
-                <a href="./variedades.html#tinta">TINTAS</a>
-                <a href="./variedades.html#blanca">BLANCAS</a>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link pe-2" aria-current="page" href="../index.html#tipos">TIPOS DE VINOS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active pe-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            VARIEDADES DE UVAS
+                        </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./variedades.html#tinta">TINTAS</a></li>
+                                <li><a class="dropdown-item" href="./variedades.html#blanca">BLANCAS</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle pe-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            GUIA DEL VINO
+                        </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./guia_del_vino.html#maridaje">MARIDAJE</a></li>
+                                <li><a class="dropdown-item" href="./guia_del_vino.html#servicio">SERVICIO</a></li>
+                                <li><a class="dropdown-item" href="./guia_del_vino.html#guarda">GUARDA</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-2" href="./aromas_y_defectos.html">AROMAS Y DEFECTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-2" href="./como_catar.html">COMO CATAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-2" href="./contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex flex-row justify-content-end">
+                <a href="../index.html" class="icon-glass pe-2"><i class="fas fa-glass-cheers"></i></a>
             </div>
         </div>
-        <a href="./aromas_y_defectos.html">AROMAS Y DEFECTOS</a>
-        <!-- colocar luego la imagen del logo que me llevara al home -->
-        <a href="../index.html">HOME-LOGO</a>
-        <div class="dropdown">
-            <button class="dropbtn">GUIA DEL VINO
-            </button>
-            <div class="dropdown-content">
-                <a href="./guia_del_vino.html#maridaje">MARIDAJE</a>
-                <a href="./guia_del_vino.html#servicio">SERVICIO</a>
-                <a href="./guia_del_vino.html#guarda">GUARDA</a>
-            </div>
-        </div>
-        <a href="./como_catar.html">COMO CATAR</a>
-        <a href="./contacto.html">CONTACTO</a>
-    </div>
+      </nav>
 
-
-    <h1>VARIEDADES DE UVAS</h1>
+    <main>
+        <h1>VARIEDADES DE UVAS</h1>
         <p class="paragraph">
             En el mundo existen muchas variedades de uvas con las que se elaboran vino.
         </p>
-
-    <section>
-        <h2 id="tinto">TINTAS</h2>
-            <article class="card-container">
-                <div class="card-grape">
-                    <h3>CABERNET FRANC</h3>
-                    <img src="../images/uva-cabernet-franc.jpg" class="center">
+        
+            <section>
+                <h2 id="tinta">TINTAS</h2>
+                <article class="card-container">
+                    <div class="card-grape">
+                        <h3>CABERNET FRANC</h3>
+                        <img src="../images/uva-cabernet-franc.jpg" class="center-img-uva">
                         <p>
                             Es sin duda una de las variedades de uva más conocidas de Burdeos, la cual suele mezclarse con Cabernet
                             Sauvignon y con Merlot, siendo así mismo muy común en el Valle del Loira (Bourgueil, Chinon y Saumur). Se adapta
@@ -70,11 +97,11 @@
                             Hay algo que caracteriza a los Cabernet Franc tanto de Francia como de Argentina y es su elegancia. En cada
                             terruño, las características son propias del suelo y clima pero en esencia es un vino sumamente elegante.
                         </p>
-                </div>
+                    </div>
 
-                <div class="card-grape">
-                    <h3>CABERNET SAUVIGNON</h3>
-                    <img src="../images/uva-cabernet-sauvignon.jpeg" class="center">
+                    <div class="card-grape">
+                        <h3>CABERNET SAUVIGNON</h3>
+                        <img src="../images/uva-cabernet-sauvignon.jpeg" class="center-img-uva">
                         <p>
                             Estamos ante la más valorada de las variedades de uva a nivel mundial, su carácter salvaje le ha
                             permitido extenderse a lo largo y ancho de la mayoría de las zonas productoras del mundo y adaptarse a todas sus
@@ -94,11 +121,11 @@
                             evolución de los primarios o por aparaición de secundarios y muy especialmente de aromas terciarios (los propios de
                             la crianza), con presencia de regaliz, cedro, tabaco o trufa.
                         </p>
-                </div>
+                    </div>
 
-                <div class="card-grape">
+                    <div class="card-grape">
                     <h3>MALBEC</h3>
-                    <img src="../images/uva-malbec.jpg" class="center">
+                    <img src="../images/uva-malbec.jpg" class="center-img-uva">
                         <p>
                             Es la variedad perfecta para los distintos terruños argentinos. Destacado por su color oscuro intenso y
                             su explosión frutal, el Malbec ofrece una amplia gama de perfiles aromáticos asociados a las condiciones
@@ -107,11 +134,11 @@
                             adquiere notas de café, vainilla y chocolate. En boca tiene la capacidad de llenar el paladar gracias a sus
                             taninos dulces, sedosos y envolventes.
                         </p>
-                </div>
+                    </div>
 
-                <div class="card-grape">
+                    <div class="card-grape">
                     <h3>MERLOT</h3>
-                    <img src="../images/uva-merlot.jpg" class="center">
+                    <img src="../images/uva-merlot.jpg" class="center-img-uva">
                         <p>
                             De relativamente reciente difusión y gran potencial, el Merlot comienza a desplegarse con tímido vigor.
                             Es un cepaje que encontró su reino en terruños altos y frescos, llegando a ser distinguido en el Valle de Uco
@@ -119,11 +146,11 @@
                             grosellas y especias. Con bajas producciones, se traduce en un vino delicado, de paladar intenso sin llegar a ser
                             potente.
                         </p>
-                </div>
+                    </div>
 
-                <div class="card-grape">
+                    <div class="card-grape">
                     <h3>PINOT NOIR</h3>
-                    <img src="../images/uva-pinot-noir.jpg" class="center">
+                    <img src="../images/uva-pinot-noir.jpg" class="center-img-uva">
                         <p>
                             Esta cepa es la que más rápido produce mutaciones. Y nuestro Pinot Noir es
                             particularmente distinto a otros por su gran concentración, fruto de la cantidad de horas de luz, la
@@ -133,11 +160,11 @@
                             una buena homogeneidad aromática de frutas rojas y negras en las que se destacan la frambuesa, la mora, la
                             remolacha y la tierra. En boca posee sabores muy elegantes.
                         </p>
-                </div>
+                    </div>
 
-                <div class="card-grape">
+                    <div class="card-grape">
                     <h3>SYRAH</h3>
-                    <img src="../images/uva-syrah.jpg" class="center">
+                    <img src="../images/uva-syrah.jpg" class="center-img-uva">
                         <p>
                             Históricamente utilizada en la elaboración de vinos de corte, en la última década su cultivo creció y se
                             expandió de manera generalizada. Se adapta muy bien a las regiones de fuerte insolación como el Valle de
@@ -147,14 +174,14 @@
                             Evidencia colores intensos, textura plena y aromas que varían desde los florales, en su juventud, hasta
                             los especiados y animales, luego de la crianza en roble y botella.
                         </p>
-                </div>
+                    </div>
                 </article>
 
-        <h2 id="blanca">BLANCAS</h2>
-            <article class="card-container">
-                <div class="card-grape">
-                    <h3>CHARDONNAY</h3>
-                    <img src="../images/uva-chardonnay.jpg" class="center">
+                <h2 id="blanca">BLANCAS</h2>
+                <article class="card-container">
+                    <div class="card-grape">
+                        <h3>CHARDONNAY</h3>
+                        <img src="../images/uva-chardonnay.jpg" class="center-img-uva">
                         <p>
                             Es una de las variedades de uva blanca más extendidas por todo el mundo. Es de
                             origen francés, de la región de Borgoña.
@@ -169,11 +196,11 @@
                             muchos de los vinos blancos elaborados con esta uva, pasan por una crianza en barrica, que aporta aromas
                             especiados y avainillados.
                         </p>
-                </div>
+                    </div>
 
-                <div class="card-grape">
-                    <h3>CHENIN</h3>
-                    <img src="../images/uva-chenin.jpg" class="center">
+                    <div class="card-grape">
+                        <h3>CHENIN</h3>
+                        <img src="../images/uva-chenin.jpg" class="center-img-uva">
                         <p>
                             La Chenin Blanc es una variedad francesa, originaria del valle del Loira. Son vinos que requieren de mucho sol para 
                             realzar sus sabores intensos afrutados y suavizar su acidez áspera. Con Chenin se obtienen vinos secos, semisecos y 
@@ -184,11 +211,11 @@
                             La podredumbre actúa deshidratando los racimos, concentrando los azúcares y los ácidos de la uva. 
                             Los vinos Chenin elaborados con estos racimos, vinos de postre muy dulces, adquieren un aroma delicado y delicioso.
                         </p>
-                </div>
+                    </div>
 
-                <div class="card-grape">
-                    <h3>RIESLING</h3>
-                    <img src="../images/uva-riesling.jpg" class="center">
+                    <div class="card-grape">
+                        <h3>RIESLING</h3>
+                        <img src="../images/uva-riesling.jpg" class="center-img-uva">
                         <p>
                             La blanquísima Riesling es originaria del valle del Rin, en Rheingau (Alemania). La Riesling tiene entre sus familiares 
                             primas tan famosas como la Chardonnay, la Aligoté o la Gamay, entre otras.
@@ -198,21 +225,21 @@
                             de frutas tropicales. Su característica acidez alta permite largas evoluciones en botella que pueden desembocar 
                             en sabores a miel, pan tostado e incluso ahumados.
                         </p>
-                </div>
+                    </div>
 
-                <div class="card-grape">
-                    <h3>SAUVIGNON BLANC</h3>
-                    <img src="../images/uva-sauvignon-blanc.jpg" class="center">
+                    <div class="card-grape">
+                        <h3>SAUVIGNON BLANC</h3>
+                        <img src="../images/uva-sauvignon-blanc.jpg" class="center-img-uva">
                         <p>
                             Su particular comportamiento vegetativo lo convierte en una joya a descubrir. Con un buen manejo del
                             viñedo logra desplegar sus intensos aromas de tipo salvaje que recuerdan a los vegetales, la clorofila y los
                             cítricos, aunque en casos excepcionales y menos frecuentes puede desarrollar aromas a frutas blancas.
                         </p>
-                </div>
+                    </div>
 
-                <div class="card-grape">
-                    <h3>TORRONTES</h3>
-                    <img src="../images/uva-torrontes.jpg" class="center">
+                    <div class="card-grape">
+                        <h3>TORRONTES</h3>
+                        <img src="../images/uva-torrontes.jpg" class="center-img-uva">
                         <p>
                             Esta variedad se cultiva en las regiones de Salta, Tucumán, Catamarca, La Rioja, Mendoza, San Juan y
                             en la Patagonia. Cada uno de esos terruños argentinos (su clima, su suelo y su altura) imprime
@@ -228,11 +255,11 @@
                             Es una de las únicas cepas en las que la tipicidad se mantiene incluso en los vinos dulces y de
                             cosecha tardía.
                         </p>
-                </div>
+                    </div>
 
-                <div class="card-grape">
+                    <div class="card-grape">
                     <h3>VIOGNIER</h3>
-                    <img src="../images/uva-viognier.jpg" class="center">
+                    <img src="../images/uva-viognier.jpg" class="center-img-uva">
                         <p>
                             Cepa oriunda de Bosnia, fue introducida en Argentina en 1993, donde ha comenzado a develarse
                             paulatinamente, llegando a ser una interesante propuesta. El Viognier se presta para la elaboración en acero
@@ -240,23 +267,39 @@
                             tropicales y un inconfundible descriptor de caramelo; mientras que presenta aromas almendrados al cabo de algunos
                             años cuando se practica la elaboración en roble.
                         </p>
-                </div>                
-        </article>
-    </section>
+                    </div>                
+                </article>
+            </section>
+    
+    </main>
+        
+        
+    <!--footer-------------------------------------------------------------------------------------------------------------------->
+    <footer class="py-2">
+        <div class="container-fluid">
+            <div class="row">
 
-    <footer class="footer">
-        <!--pie de pagina, iconos de redes-->
-        <p>
-            Comparte en redes sociales y síguenos
-        </p>
-        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-        <p>
-            Copyright2021
-        </p>
+                <div class="col-md-6 col-xs-12">
+                    <div class="col-12">
+                        <p class="fs-4 text-center m-0">Comparte en redes y seguinos</p>
+                        <p class="fs-4 text-center m-0">Copyright 2021</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xs-12">
+                    <div class="col-12 d-flex flex-row justify-content-around ">
+                        <a href="https://www.facebook.com/" class="icon-face transform-image"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="icon-ig transform-image"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/" class="icon-tw transform-image"><i class="fab fa-twitter"></i></a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
     </footer>
-
+    
+      <script src="../libs/jquery/jquery-3.6.0.min.js"></script>
+      <script src="../libs/bootstrap/js/bootstrap.min.js"></script> 
 </body>
 
 </html>

@@ -5,46 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/nav_style.css" />
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Proyecto</title>
+    <title>Boostrap</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="../index.html#tipos">TIPOS DE VINOS</a>
-        <div class="dropdown">
-            <button class="dropbtn">VARIEDADES DE UVAS
-            </button>
-            <div class="dropdown-content">
-                <a href="./variedades.html#tinta">TINTAS</a>
-                <a href="./variedades.html#blanca">BLANCAS</a>
-            </div>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container justify-content-center">
+            <a class="navbar-brand m-2" href="../index.html"><img src="../images/entre-copas-prueba.png" alt="logo" class="rounded-circle"></a>
         </div>
-        <a href="./aromas_y_defectos.html" class="activo">AROMAS Y DEFECTOS</a>
-        <!-- colocar luego la imagen del logo que me llevara al home -->
-        <a href="../index.html">HOME-LOGO</a>
-        <div class="dropdown">
-            <button class="dropbtn">GUIA DEL VINO
-            </button>
-            <div class="dropdown-content">
-                <a href="./guia_del_vino.html#maridaje">MARIDAJE</a>
-                <a href="./guia_del_vino.html#servicio">SERVICIO</a>
-                <a href="./guia_del_vino.html#guarda">GUARDA</a>
-            </div>
-        </div>
-        <a href="./como_catar.html">COMO CATAR</a>
-        <a href="./contacto.html">CONTACTO</a>
-    </div>
+      </nav>
 
-    <h1>AROMAS Y DEFECTOS</h1>
-    <section>
-        <article>
-            <h2>AROMAS DEL VINO</h2>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fs-5 sticky-top p-0">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link pe-2" aria-current="page" href="../index.html#tipos">TIPOS DE VINOS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle pe-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  VARIEDADES DE UVAS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./variedades.html#tinta">TINTAS</a></li>
+                  <li><a class="dropdown-item" href="./variedades.html#tinta">BLANCAS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle pe-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  GUIA DEL VINO
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./guia_del_vino.html#maridaje">MARIDAJE</a></li>
+                  <li><a class="dropdown-item" href="./guia_del_vino.html#servicio">SERVICIO</a></li>
+                  <li><a class="dropdown-item" href="./guia_del_vino.html#guarda">GUARDA</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active pe-2" href="./aromas_y_defectos.html">AROMAS Y DEFECTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-2" href="./como_catar.html">COMO CATAR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-2" href="./contacto.html">CONTACTO</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+          <div class="d-flex flex-row justify-content-end">
+            <a href="../index.html" class="icon-glass pe-2"><i class="fas fa-glass-cheers"></i></a>
+        </div>
+        </div>
+      </nav>
+
+    <main class="container">
+        <h1>AROMAS Y DEFECTOS</h1>
+        <section>
+            <article>
+                <h2>AROMAS DEL VINO</h2>
+
                 <p class="paragraph">
                     Para conocer y diferenciar los aromas de los vinos debemos probar muchos vinos y así
                     mejoraremos nuestras aptitudes olfativas y gustativas.
@@ -55,7 +85,8 @@
                     aromas del vino se pueden encontrar por vía retronasal.
                 </p>
 
-                <h3>PRIMARIOS</h3>
+                    <h3>PRIMARIOS</h3>
+
                     <p>
                         Los aromas primarios son los aromas que provienen de la cepa. Son los que aporta la uva al vino, que
                         suelen ser fruta, especias y minerales. Dependen mucho de la variedad de la uva y se pueden determinar 4 series.
@@ -66,7 +97,8 @@
                         Mineral: Brea, pizarra mojada, granito, punta de lápiz.
                     </p>
 
-                <h3>SECUNDARIOS</h3>
+                    <h3>SECUNDARIOS</h3>
+
                     <p>
                         Los aromas secundarios provienen del proceso de fermentación alcohólica o malo láctica, y suelen variar
                         en función de las levaduras seleccionadas y de la temperatura de fermentación de los vinos. Podemos
@@ -77,7 +109,8 @@
                         Amílicos: esmalte de uñas, plátano, barniz.
                     </p>
 
-                <h3>TERCIARIOS</h3>
+                    <h3>TERCIARIOS</h3>
+                    
                     <p>
                         Los aromas terciarios, son los típicos de la crianza de los vinos en botella de larga duración.
                         Es una evolución de aromas del vino que desemboca en aromas tipo cuero y pieles de animales. Este
@@ -86,7 +119,8 @@
                         Pieles, cuero, tostados, café, almendras, nueces, etc.
                     </p>
 
-            <h2>DEFECTOS DEL VINO</h2>
+                <h2>DEFECTOS DEL VINO</h2>
+                
                 <p class="paragraph">
                     El defecto del vino se define como una alteración de las propiedades organolépticas deseadas en el vino,
                     ya sea en el aroma o el sabor. Es importante no sólo reconocer e identificar el defecto que puede tener el
@@ -96,7 +130,8 @@
                     condicionesde ser bebida.
                 </p>
 
-                <h3>VINO OXIDADO</h3>
+                    <h3>VINO OXIDADO</h3>
+                    
                     <p>
                         ¿Qué es? Este defecto aparece cuando el vino entra en contacto con el oxígeno durante un período prolongado de
                         tiempo. Puede producirse durante su elaboración o, incluso, una vez ya se ha embotellado. Los cambios
@@ -105,26 +140,30 @@
                         oxidación del vino.
                     </p>
 
-                    <p>
+                     <p>
                         ¿Cómo identificarlo? El vino cambia de color, el tinto se vuelve de color marrón apagado y los blancos, de dorado oscuro a
                         marrón. En nariz se pueden percibir aroma plano y débil y en algunos casos, rancio y ajerezado. En boca,
-                        pérdida de acidez, los sabores frescos se convierten en amargos, secos y con notas tostadas.</p>
+                        pérdida de acidez, los sabores frescos se convierten en amargos, secos y con notas tostadas.
+                    </p>
 
-                <h3>CORCHO</h3>
+                    <h3>CORCHO</h3>
+                    
                     <p>
                         ¿Qué es? La causa de este defecto es un corcho infectado por TCA (Tricloroanisol).Esta molécula se aloja en las
                         pequeñas fisuras del corcho produciendo un olor muy desagradable que se traslada al vino. Este defecto aparece
                         habitualmente cuando el alcornoque, el árbol del cual se obtiene el corcho, está infectado por moho y en
-                        la  bodega no se realizan los exámenes correspondientes para detectar dicha infección.</p>
-                    
+                        la  bodega no se realizan los exámenes correspondientes para detectar dicha infección.
+                    </p>
+                                
                     <p> 
                         ¿Cómo identificarlo?
                         En nariz, percibimos olores a cartón mojado, moho y humedad. En boca el vino pierde toda su carga frutal
                         y destacan los gustos amargos. Como dato curioso, esta molécula no huele por sí misma, sino lo que
-                        consigue es distorsionar nuestra capacidad de percibir los olores.
+                         consigue es distorsionar nuestra capacidad de percibir los olores.
                     </p>
 
-                <h3>EXCESO DE SULFUROSO</h3>
+                    <h3>EXCESO DE SULFUROSO</h3>
+                    
                     <p>
                         ¿Qué es?
                         Este defecto es causado por la utilización en exceso del dióxido de azufre. Este componente estabiliza
@@ -134,19 +173,22 @@
                         parte de que el vino no tiene sabores frutales y es más bien amargo.
                     </p>
 
-                <h3>VINO REDUCIDO</h3>
+                    <h3>VINO REDUCIDO</h3>
+
                     <p>
                         ¿Qué es? Este defecto lo crea un compuesto químico llamado ácido sulfhídrico. El vino reducido es la cara opuesta
                         al defecto de oxidación, es decir, el vino no ha entrado en contacto con el oxígeno el tiempo necesario
                         durante la vinificación. Esta es la causa más común aunque la reducción también puede deberse a la adición en
                         exceso de dióxido de azufre. Una manera de reducir este defecto es decantando o aireando el vino.
                     </p>
-                    
-                    <p>¿Cómo identificarlo? En nariz percibimos olor a azufre, goma quemada y, sobre todo, huevos podridos. En boca, también
+                                
+                    <p>
+                        ¿Cómo identificarlo? En nariz percibimos olor a azufre, goma quemada y, sobre todo, huevos podridos. En boca, también
                         percibimos el gusto a huevos podridos.
                     </p>
 
-                <h3>ACIDEZ VOLATIL ALTA</h3>
+                    <h3>ACIDEZ VOLATIL ALTA</h3>
+                    
                     <p>
                         ¿Qué es?
                         Este defecto aparece cuando el vino es atacado por una bacteria llamada Acetobacter por la falta de
@@ -158,26 +200,40 @@
 
                     <p>
                         ¿Cómo identificarlo? Se identifica olfativamente por el olor a vinagre e, incluso, a esmalte de uñas. En boca tiene un gusto
-                        agrio y avinagrado.
-                    </p>
+                         agrio y avinagrado.
+                     </p>
 
-        </article>
-    </section>
+            </article>
+        </section>
+    </main>
+    
+    <!--footer-------------------------------------------------------------------------------------------------------------------->
+    <footer class="py-2">
+      <div class="container-fluid">
+          <div class="row">
 
+              <div class="col-md-6 col-xs-12">
+                  <div class="col-12">
+                      <p class="fs-4 text-center m-0">Comparte en redes y seguinos</p>
+                      <p class="fs-4 text-center m-0">Copyright 2021</p>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-xs-12">
+                  <div class="col-12 d-flex flex-row justify-content-around ">
+                      <a href="https://www.facebook.com/" class="icon-face transform-image"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/" class="icon-ig transform-image"><i class="fab fa-instagram"></i></a>
+                      <a href="https://twitter.com/" class="icon-tw transform-image"><i class="fab fa-twitter"></i></a>
+                  </div>
+                 
+              </div>
+          </div>
+      </div>
+  </footer>
     
-    <footer class="footer">
-        <!--pie de pagina, iconos de redes-->
-        <p>
-            Comparte en redes sociales y síguenos
-        </p>
-        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-        <p>
-            Copyright2021
-        </p>
-    </footer>
-    
+      <script src="../libs/jquery/jquery-3.6.0.min.js"></script>
+      <script src="../libs/bootstrap/js/bootstrap.min.js"></script> 
+
 </body>
 
 </html>
