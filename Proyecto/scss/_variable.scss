@@ -1,0 +1,43 @@
+$title-size: 2.5rem;
+$subtitle-size: 2.2rem;
+$another-title-size: 1.8rem;
+
+$my-font:'Jost', sans-serif;
+$body-font-size: 1.5rem;
+
+$color-btn: #594C3B;
+
+
+$footer-font: 'Oswald', sans-serif;
+$footer-color: #A68053;
+$footer-size: 40px;
+
+//----for----------
+
+$color-title: #A61103 #66201a #d3a144;
+
+@for $i from 1 through 3 {
+	h#{$i}{
+		color: nth($color-title, $i);
+	}
+}
+
+
+//----each------------------------------
+$colors: (
+	youtube:#13e47b,
+	articles: #FFAC83,
+	commynity: #3F78C9,
+	my-pag: #8a0766,
+);
+
+@each $name, $color in $colors {
+	.#{$name} {
+		color: $color;
+	}
+}
+
+
+  
+
+

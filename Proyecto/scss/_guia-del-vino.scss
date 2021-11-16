@@ -1,0 +1,46 @@
+/*-------grid Maridaje-------------*/
+  
+  .contenedor-maridaje {
+    display: grid;  
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, auto, 1fr);
+    background-color: #F2CC85;
+    margin: 15px;
+    justify-items: stretch;
+    text-align: center;  
+    }
+  
+  
+  .table-header{
+    padding: 10px; 
+    background-color: #262626;
+    color:#F2E088;
+    border: 2px solid #F2F2F2;
+    font-weight: 200;
+  }
+  
+  .table-item{
+    background-color: #F2E088;
+    padding: 5px;
+    border: 2px solid #F2F2F2;
+  }
+  
+  /*---------Guarda-----------*/
+  
+  ul.barrica {
+    padding-left: 2rem;
+    list-style-type: none;
+    margin-left: 60px;
+    color: #590202;
+    font-weight: 400;
+    font-size: 20px;
+    li{
+      margin-right: 10px;
+      padding-left: 1.5rem;
+      background-image: url(../images/barrica.png);
+      background-position: 0 0;
+      background-size: 1.4rem 1.4rem;
+      background-repeat: no-repeat;
+      margin-bottom: 1rem;
+    }
+  }

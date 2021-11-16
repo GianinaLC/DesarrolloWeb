@@ -1,0 +1,5 @@
+@mixin p-m($relleno, $margen){
+    padding: $relleno;
+    margin: $margen;
+}
+

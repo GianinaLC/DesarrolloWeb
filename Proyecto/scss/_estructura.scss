@@ -1,161 +1,18 @@
-nav{
-    .active{
-      border-bottom: 1px outset #590202;
+/*---enlaces---*/
+p {
+    a {
+    text-decoration: none;
+        &:hover{
+            color: slategrey;
+            text-decoration: underline;
+        }
     }
 }
 
-
-.icon-glass{
-  font-size: 40px;
-  color:#6E6F73;
-}
-.icon-glass:hover{
-  color: rgba(0,0,0,.7);
-}
-
-.bg-nav-color{
-  background-color: #ffffff;
-}
-
-.card-text{
-  font-size: 1.2rem;
-}
-
-
-
-
-
-
-/*
-  imagenes en Variedades de uvas
-*/
-.center-img-uva {
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-    display: block;
+h1,h2,h3 {
+    @include p-m(0.1em, 0.1em);
   }
-  
-  /*
-    Flexbox / Variedades de uvas
-  */
-  
-  .card-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
+
+  footer{
+    @include p-m(0.8em, 0);
   }
-    
-  .card-grape {
-    font-size: 1.2rem;
-    font-weight: 300;
-    flex-basis: 400px;
-    margin: 25px 10px 30px 30px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  } 
-  
-  /*
-    grid Maridaje
-  */
-  
-  .contenedor-maridaje {
-    display: grid;  
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, auto, 1fr);
-    background-color: #F2CC85;
-    margin: 15px;
-    justify-items: stretch;
-    text-align: center;  
-    }
-  
-  
-  .table-header{
-    padding: 10px; 
-    background-color: #262626;
-    color:#F2E088;
-    border: 2px solid #F2F2F2;
-    font-weight: 200;
-  }
-  
-  .table-item{
-    background-color: #F2E088;
-    padding: 5px;
-    border: 2px solid #F2F2F2;
-  }
-  
-  /*
-    Guarda
-  */
-  
-  /* ol,
-  li,
-  ul {
-    
-  } */
-  
-  ul.barrica {
-    padding-left: 2rem;
-    list-style-type: none;
-    margin-left: 60px;
-    color: #590202;
-    font-weight: 400;
-    font-size: 20px;
-    margin-right: 10px;
-  }
-  
-  ul li.barrica {
-    padding-left: 1.5rem;
-    background-image: url(../images/barrica.png);
-    background-position: 0 0;
-    background-size: 1.4rem 1.4rem;
-    background-repeat: no-repeat;
-    margin-bottom: 1rem;
-  }
-  
-  
-  
-  
-
-  /*btn card colores del vino*/
-.btn-card a{
-  color: #BF7950;
-  text-decoration: none;
-}
-.btn-card:hover{
-  background-color: #e9ddbb;
-}
-
-
-/*
-  Footer grid
-*/
-
-footer {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  color:#A68053;
-  background: linear-gradient(90deg, rgba(9,3,3,1) 0%, rgba(77,36,36,1) 50%, rgba(74,0,0,1) 100%);
-
-}
-
-footer a{
-  color: #A68053!important;
-/*el important va porque sino no me toma el opacity y me pone por defecto el hover del enlace en azul*/
-  font-size: 40px;
-}
-
-.transform-image:hover{
-  opacity: 0.5;
-}
-
-.icon-face{
-  grid-column-start: 3;
-}
-.icon-ig{
-   grid-column-start:4;
-}
-.icon-tw{
-  grid-column-start:5;
-}

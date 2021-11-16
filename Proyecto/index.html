@@ -10,18 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Boostrap</title>
+    <title>Entre Copas</title>
 </head>
 
 
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-dark">
         <div class="container justify-content-center">
-            <a class="navbar-brand m-2" href="./index.html"><img src="./images/entre-copas-prueba.png" alt="logo" class="rounded-circle"></a>
+            <a class="navbar-brand" href="./index.html"><img src="./images/entre-copas-prueba2.png" width="150px" alt="logo" class="rounded-circle"></a>
         </div>
       </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fs-5 sticky-top p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom fs-6 sticky-top p-0">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -63,38 +63,48 @@
                 </ul>
             </div>
             <div class="d-flex flex-row justify-content-end">
-                <a href="./index.html" class="icon-glass pe-2"><i class="fas fa-glass-cheers"></i></a>
+                <a href="./index.html" class="icon-glass pe-2"><i class="fas fa-glass-cheers fs-2"></i></a>
             </div>
         </div>
     </nav>
 
-    <main class="container">
+    <main >
         <!--imagen vino---------------------------------------------------------------------------------------------------------->
-        <img src="./images/fondo.png" alt="el vino" class="mx-auto d-block mt-3 rounded-circle w-100">
+        <!-- <img src="./images/cabecera-vinos.jpg" class="img-fluid" > -->
         <h1 class="fw-bold">EL VINO</h1>
-        <section>
-            <h2 class="m-5">QUE ES EL VINO?</h2>
-            <p class="paragraph fst-italic fw-light">
-                El vino es la bebida que se obtiene de la <strong>fermentación alcohólica</strong> 
-                total o parcial, del jugo de uvas maduras. El vino esta formado por diferentes componentes, de los cuales 
-                <strong>el principal es el agua</strong>, que esta presente al rededor de un 85%.
-                <strong> El segundo componente más importante es el alcohol</strong>, que surge gracias a la
-                fermentación, le da cuerpo y aroma al vino. La graduación del vino suele variar entre el 7% y el 15%, 
-                dependiendo del tipo de vino. El resto de componentes aparecen en menor cantidad, 
-                como <strong>azúcares</strong>, influyen en el sabor del vino;
-                <strong> taninos</strong>, que le dan color y textura al vino;
-                <strong> sustancias volátiles</strong>, que constituyen parte del aroma;
-                <strong> ácidos</strong>, que participan también en el sabor del vino; y algunos otros
-                de menor importancia. Todos estos componentes son los que hacen que cada vino sea diferente, pero la
-                cantidad en la que aparecen estos en el vino, se debe sobre todo al clima, al suelo, y a la vid que
-                da las uvas. Estos factores, influyen en la calidad de la uva, y por consiguiente, en que los
-                componentes aparezcan en una cantidad u otra, y, por supuesto, en la calidad final del vino.
-            </p>
+        <section class="container">
+            <h2>QUE ES EL VINO?</h2>
+            <article class="row">
+                <div class="col-md-6">
+                    <p class="paragraph fst-italic">
+                        El vino es la bebida que se obtiene de la <strong><a class="articles" href="https://www.lev2050.com/la-fermentacion-alcoholica-en-el-vino-que-es-y-por-que-su-desarrollo-afecta-la-calidad-de-los-vinos/">fermentación alcohólica</a></strong> 
+                        total o parcial, del jugo de uvas maduras. El vino esta formado por diferentes componentes, de los cuales <strong>el principal es el agua</strong>, que esta presente al rededor de un 85%.
+                        <strong> El segundo componente más importante es el alcohol</strong>, que surge gracias a la
+                        fermentación, le da cuerpo y aroma al vino. 
+                    </p>
+                </div>
+            
+                <div class="col-md-6">
+                    <img src="./images/fondo.png" alt="el vino" class="img-circle mx-auto d-block m-3 img-fluid">
+                </div>
+            </article>
+            
+            <article>
+                <p>
+                    La graduación del vino suele variar entre el 7% y el 15%, 
+                    dependiendo del tipo de vino. El resto de componentes aparecen en menor cantidad, 
+                    como azúcares, influyen en el sabor del vino; taninos, que le dan color y textura al vino; sustancias volátiles, que constituyen parte del aroma; ácidos, que participan también en el sabor del vino; y algunos otros
+                    de menor importancia. Todos estos <strong><a class="articles" href="https://www.cursocatadelvino.com/el-vino-y-su-composicion/">componentes</a></strong> son los que hacen que cada vino sea diferente, pero la
+                    cantidad en la que aparecen estos en el vino, se debe sobre todo al clima, al suelo, y a la vid que
+                    da las uvas. Estos factores, influyen en la calidad de la uva, y por consiguiente, en que los
+                    componentes aparezcan en una cantidad u otra, y, por supuesto, en la calidad final del vino.
+                </p>
+            </article>
                     
             <!--tipos de vinos------------------------------------------------------------------------------------------------->
             <article>
-                <h2 id="tipos" class="m-5">TIPOS DE VINOS</h2>
-                <p class="m-3 text-center">
+                <h2 id="tipos">TIPOS DE VINOS</h2>
+                <p>
                     Hay varias formas de clasificar los vinos, pero son dos las más conocidas, por
                     el color del vino y por su edad. Dependiendo de la uva utilizada podemos encontrar vinos tintos, blancos o rosados,
                     y si nos fijamos en la edad tenemos vinos jóvenes, o vinos con crianza, dependiendo de la crianza que
@@ -102,8 +112,8 @@
                 </p>
             
                 <!--clasificacion por color------------------------------------------------------------------------------------>
-                    <h3 class="m-5">CLASIFICACION POR COLOR</h3>
-                    <div class="card-group container flex-sm-column flex-lg-row fs-4 fw-light">
+                    <h3>CLASIFICACION POR COLOR</h3>
+                    <div class="card-group container flex-sm-column flex-lg-row fs-4 mb-5">
                         <div class="card border">
                         <img src="./images/copa-vino-tinto.jpg" class="card-img-top img-fluid align-self-center" alt="vino tinto" style="width: min-content;">
                             <div class="card-body d-flex flex-column">
@@ -147,7 +157,7 @@
                     </div>
                       
                     <!--clasificacion por su edad---------------------------------------------------------------------------------->
-                    <h3 class="mt-5">CLASIFICACION POR SU EDAD</h3>
+                    <h3>CLASIFICACION POR SU EDAD</h3>
                     <!--carrusel--------------------------------------------------->
                     <div id="carouselExampleControls" class="carousel carousel-dark slide d-none d-sm-block" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -172,7 +182,7 @@
                     </div>
 
                     <!--definicion--------------------------------------------------->
-                    <div class="row center fw-light mt-3 mb-5">
+                    <div class="row center mt-3 mb-5">
                         <div class="col-md-6 mb-4">
                             <strong>JOVEN:</strong> Estos vinos han pasado directamente de sus depósitos a
                             la botella sin pasar por barrica. En estos vinos son destacables los aromas primarios procedentes de la uva. 
@@ -200,7 +210,7 @@
     </main>
 
     <!--footer-------------------------------------------------------------------------------------------------------------------->
-    <footer class="py-2">
+    <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-xs-12">
@@ -212,9 +222,9 @@
 
                 <div class="col-md-6 col-xs-12">
                     <div class="col-12 d-flex flex-row justify-content-around ">
-                        <a href="https://www.facebook.com/" class="icon-face transform-image"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/" class="icon-ig transform-image"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/" class="icon-tw transform-image"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/" class="icon-face"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="icon-ig"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/" class="icon-tw"><i class="fab fa-twitter"></i></a>
                     </div>
                    
                 </div>

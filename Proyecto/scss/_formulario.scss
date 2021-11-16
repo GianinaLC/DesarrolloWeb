@@ -1,46 +1,35 @@
-/*
-    Formulario
-  */
-  
-  input[type="text"],
-  input[type="email"],
-  textarea,
-  select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 2px solid #594622;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 18px;
-  }
-  
-  input[type="submit"],
-  input[type="reset"] {
-    width: 200px;
-    background-color: #590202;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 4px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #A61103;
-  }
-  input[type="reset"]:hover {
-    background-color: #A61103;
-  }
-  
-  .div-form {
-    color:#D9B26A;
-    font-size: 20px;
-    border-radius: 5px;
-    background-color: #0D0D0D;
-    padding: 20px 20px 80px 20px;
-    margin: 30px 80px 50px 80px;
-  }
+// ----each-----botones----------
+
+$btn-colors: (send:#f442b0, reset:#bb0685b2, check:#a510785b,);
+@each $name-color, $bg-color-btn in $btn-colors{
+    .btn-color-#{$name-color}{
+        background-color: $bg-color-btn;
+		border-radius: 10px 100px / 120px;
+		border: solid 1px #BF7154;
+  			&:hover{
+    		background-color: #BFB2A3;
+    		border: solid 1px #594C3B;
+    	}
+	}
+}
+
+// ----operaciones---------------
+$ancho: 500px;
+
+.btn-color-send {
+    width: $ancho/2; /* Ancho de 360*/
+}
+.btn-color-reset {
+    width: ($ancho/2)-50;
+}
+
+.btn-color-check {
+	width: ($ancho/5)-70;
+}
+
+.bg-form{
+	background-color: #BFB2A3;
+	border-radius:  10px 100px / 120px;
+}
+
+

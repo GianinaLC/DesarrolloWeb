@@ -1,11 +1,11 @@
+/*-----pagina con BEM----*/
+
 .cata{
     margin: 5px;
     border: 3px double #0D0D0D;
 }
 
-/*
-    Flexbox / Como catar
-*/
+/*-----Flexbox-----*/
 
 .cata__phases {
     display: flex;
@@ -34,19 +34,21 @@
     text-align: center;
 }
 
-/* 
-    accordion aun arreglando
-*/
+/*----accordion modificando------*/
 
+ .accordion-button:not(.collapsed){
+    background-color: #bf715481;
+    color: #BF7154;   
+}
 
+.accordion-button:focus {
+        box-shadow: 0 0 0 0.2rem #d8775481;
+    }
+    
 
+/*-------mas info - transformacion------*/
 
-/* 
-    mas info - transformaciones aun arreglando
-*/
-
-
-/* .info__mas {
+.info__mas {
     overflow: hidden;
     margin-left: 10px;
     margin-bottom: 30px;
@@ -55,9 +57,8 @@
     height: 30px;
     background: linear-gradient(90deg, rgba(227,227,227,1) 0%, rgba(244,244,244,1) 50%, rgba(218,215,215,1) 100%);
     transition: 1s;
+        &:hover {
+        width: 90%;
+        transform: translate(10px, 20px);
+    }
 }
-  
-.info__mas:hover {
-    width: 80%;
-    transform: translate(10px, 20px);
-  } */
