@@ -1,10 +1,22 @@
 @import "variable";
+@import "index";
+@import "navbar";
+@import "mixin";
 @import "tipografia";
 @import "estructura";
-@import "cata";
+@import "variedades-de-uvas";
+@import "guia-del-vino";
+@import "aromas-defectos";
+@import "como-catar";
 @import "formulario";
+@import "footer";
 
 
-  
+:target::before {
+    content: "";
+    display: block;
+    height: 80px; /* fixed header height*/
+    margin: -80px 0 0; /* negative fixed header height */
+  }
   
  

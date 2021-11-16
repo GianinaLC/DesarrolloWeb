@@ -1,0 +1,25 @@
+/*----imagenes en Variedades de uvas----*/
+.center-img-uva {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    display: block;
+  }
+  
+  //---------Flexbox / Variedades de uvas-------
+  
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+    
+  .card-grape {
+    font-size: 1.2rem;
+    font-weight: 300;
+    flex-basis: 400px;
+    margin: 25px 10px 30px 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  } 

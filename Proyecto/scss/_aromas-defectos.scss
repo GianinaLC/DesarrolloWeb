@@ -1,0 +1,14 @@
+//maps-------------
+
+$colors: (one:#f0be93, two:#c97831, three:#8C0327,);
+@each $name-color, $bg-color in $colors{
+    .circle-#{$name-color}{
+        background-color: $bg-color;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 200px;
+    }
+}
+
