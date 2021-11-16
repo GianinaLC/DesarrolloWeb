@@ -9,9 +9,13 @@ p {
     }
 }
 
-h1,h2,h3 {
-    @include p-m(0.1em, 0.1em);
+:target::before {
+    content: "";
+    display: block;
+    height: 80px; /* fixed header height*/
+    margin: -80px 0 0; /* negative fixed header height */
   }
+
 
   footer{
     @include p-m(0.8em, 0);
