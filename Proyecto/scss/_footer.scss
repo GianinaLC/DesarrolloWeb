@@ -1,12 +1,13 @@
 footer {
   font-family: $footer-font;
+  font-size: $footer-size;
   font-weight: 400;
   color: $footer-color;
   background: linear-gradient(90deg, rgba(9,3,3,1) 0%, rgba(77,36,36,1) 50%, rgba(74,0,0,1) 100%);
     a {
       color: $footer-color!important;
       /*el important va porque sino no me toma el opacity y me pone por defecto el hover del enlace en azul*/
-      font-size: $footer-size;
+      font-size: $footer-icon;
       &:hover{
 		    opacity: 0.5;
 	    }
