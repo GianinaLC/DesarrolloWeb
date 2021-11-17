@@ -14,22 +14,22 @@ $btn-colors: (send:#f442b0, reset:#bb0685b2, check:#a510785b,);
 }
 
 // ----operaciones---------------
-$ancho: 500px;
+$ancho: 600px;
 
 .btn-color-send {
-    width: $ancho/2; /* Ancho de 360*/
+    width: $ancho/3;
 }
 .btn-color-reset {
-    width: ($ancho/2)-50;
+    width: ($ancho/3)-50;
 }
 
 .btn-color-check {
-	width: ($ancho/5)-70;
+	width: ($ancho/6)-70;
 }
 
 .bg-form{
 	background-color: #BFB2A3;
-	border-radius:  10px 100px / 120px;
+	border-radius:  10px;
 }
 
 

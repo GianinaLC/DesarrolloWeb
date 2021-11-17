@@ -3,6 +3,7 @@
 .cata{
     margin: 5px;
     border: 3px double #0D0D0D;
+    z-index: 1;
 }
 
 /*-----Flexbox-----*/
@@ -50,15 +51,13 @@
 
 .info__mas {
     overflow: hidden;
-    margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding-left: 5px;
-    width: 100px;
+    width: 150px;
     height: 30px;
-    background: linear-gradient(90deg, rgba(227,227,227,1) 0%, rgba(244,244,244,1) 50%, rgba(218,215,215,1) 100%);
     transition: 1s;
         &:hover {
-        width: 90%;
-        transform: translate(10px, 20px);
+        width:  80%;
+        transform: translate( 10px);
     }
 }
