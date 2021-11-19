@@ -258,10 +258,16 @@ ul.barrica {
     width: 80%;
     transform: translate(10px); }
 
+.bg-form {
+  background-color: #BFB2A3;
+  box-shadow: 0 4px 8px 0 rgba(242, 177, 121, 0.671), 0 6px 20px 0 rgba(156, 56, 56, 0.884);
+  border-radius: 10px; }
+
 .btn-color-send {
   background-color: #f442b0;
   border-radius: 10px 100px / 120px;
-  border: solid 1px #BF7154; }
+  border: solid 1px #BF7154;
+  width: 200px; }
   .btn-color-send:hover {
     background-color: #BFB2A3;
     border: solid 1px #594C3B; }
@@ -269,7 +275,8 @@ ul.barrica {
 .btn-color-reset {
   background-color: #bb0685b2;
   border-radius: 10px 100px / 120px;
-  border: solid 1px #BF7154; }
+  border: solid 1px #BF7154;
+  width: 200px; }
   .btn-color-reset:hover {
     background-color: #BFB2A3;
     border: solid 1px #594C3B; }
@@ -277,33 +284,27 @@ ul.barrica {
 .btn-color-check {
   background-color: #a510785b;
   border-radius: 10px 100px / 120px;
-  border: solid 1px #BF7154; }
+  border: solid 1px #BF7154;
+  width: 200px; }
   .btn-color-check:hover {
     background-color: #BFB2A3;
     border: solid 1px #594C3B; }
 
-.btn-color-send {
-  width: 200px; }
-
-.btn-color-reset {
-  width: 150px; }
-
 .btn-color-check {
   width: 30px; }
 
-.bg-form {
-  background-color: #BFB2A3;
-  border-radius: 10px; }
+.bg-ifr {
+  box-shadow: 0 4px 8px 0 rgba(88, 47, 11, 0.671), 0 6px 20px 0 rgba(77, 33, 33, 0.884); }
 
 footer {
   font-family: "Oswald", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
   color: #A68053;
   background: linear-gradient(90deg, #090303 0%, #4d2424 50%, #4a0000 100%); }
   footer a {
     color: #A68053 !important;
     /*el important va porque sino no me toma el opacity y me pone por defecto el hover del enlace en azul*/
-    font-size: 3rem; }
+    font-size: 2.5rem; }
     footer a:hover {
       opacity: 0.5; }
