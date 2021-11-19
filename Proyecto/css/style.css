@@ -127,6 +127,7 @@ ul.barrica {
 
 .circle-one {
   background-color: #f0be93;
+  box-shadow: 0 4px 8px 0 rgba(155, 105, 62, 0.671), 0 6px 20px 0 rgba(134, 33, 33, 0.884);
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -135,6 +136,7 @@ ul.barrica {
 
 .circle-two {
   background-color: #c97831;
+  box-shadow: 0 4px 8px 0 rgba(155, 105, 62, 0.671), 0 6px 20px 0 rgba(134, 33, 33, 0.884);
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -143,6 +145,7 @@ ul.barrica {
 
 .circle-three {
   background-color: #8C0327;
+  box-shadow: 0 4px 8px 0 rgba(155, 105, 62, 0.671), 0 6px 20px 0 rgba(134, 33, 33, 0.884);
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -150,33 +153,90 @@ ul.barrica {
   line-height: 200px; }
 
 /*-----pagina con BEM----*/
-.cata {
-  margin: 5px;
-  border: 3px double #0D0D0D;
-  z-index: 1; }
-
 /*-----Flexbox-----*/
-.cata__phases {
-  display: flex;
-  flex-wrap: wrap; }
-
+/* .cata__phases {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+    
 .cata__phases--card {
-  flex: 1;
-  flex-basis: 250px;
-  padding: 15px;
-  margin: 15px;
-  background-color: #BF7154; }
+    flex: 1;
+    padding: 15px;
+    margin: 15px;
+    justify-content: center;
+    background-image: url(../images/fase-visual.jpg);
+    width: 500px;
+    height: 500px;
+}
+  
+.cata__tittle--uppercase{
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
 
-.cata__tittle--uppercase {
-  margin-top: 15px;
-  text-align: center;
-  text-transform: uppercase; }
+.cata__text{
+    align-items: center;
+    font-size: 1.2rem;
+    padding-top: 15px ;
+    font-weight: 300;
+    text-align: center;
+    
+} */
+.img-cata {
+  margin: 1rem; }
 
-.cata__text {
-  font-size: 1.2rem;
-  padding-top: 15px;
-  font-weight: 300;
-  text-align: center; }
+.cata__bg {
+  background-color: #f2b17988;
+  box-shadow: 0 4px 8px 0 rgba(242, 177, 121, 0.671), 0 6px 20px 0 rgba(156, 56, 56, 0.884);
+  margin: 0; }
+
+.div1 {
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-fill-mode: forwards; }
+
+@keyframes example {
+  from {
+    left: -100px; }
+  to {
+    left: 0px; } }
+
+.cata__bg--2 {
+  background-color: #8c032788;
+  box-shadow: 0 4px 8px 0 rgba(242, 177, 121, 0.671), 0 6px 20px 0 rgba(156, 56, 56, 0.884);
+  margin: 0; }
+
+.div2 {
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-fill-mode: forwards; }
+
+@keyframes example {
+  from {
+    left: -100px; }
+  to {
+    left: 0px; } }
+
+.cata__bg--3 {
+  background-color: #8c441b88;
+  box-shadow: 0 4px 8px 0 rgba(242, 177, 121, 0.671), 0 6px 20px 0 rgba(156, 56, 56, 0.884);
+  margin: 0; }
+
+.div3 {
+  position: relative;
+  animation-name: example;
+  animation-duration: 7s;
+  animation-fill-mode: forwards; }
+
+@keyframes example {
+  from {
+    left: -100px; }
+  to {
+    left: 0px; } }
 
 /*----accordion modificando------*/
 .accordion-button:not(.collapsed) {
@@ -190,7 +250,6 @@ ul.barrica {
 .info__mas {
   overflow: hidden;
   margin-bottom: 10px;
-  padding-left: 5px;
   width: 150px;
   height: 30px;
   transition: 1s; }

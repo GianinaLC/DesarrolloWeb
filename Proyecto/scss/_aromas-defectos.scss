@@ -4,6 +4,7 @@ $colors: (one:#f0be93, two:#c97831, three:#8C0327,);
 @each $name-color, $bg-color in $colors{
     .circle-#{$name-color}{
         background-color: $bg-color;
+        box-shadow: 0 4px 8px 0 rgba(155, 105, 62, 0.671), 0 6px 20px 0 rgba(134, 33, 33, 0.884);
         width: 200px;
         height: 200px;
         border-radius: 50%;
