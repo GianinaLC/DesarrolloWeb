@@ -12,11 +12,11 @@ p {
 :target::before {
     content: "";
     display: block;
-    height: 80px; /* fixed header height*/
+    height: 120px; /* fixed header height*/
     margin: -80px 0 0; /* negative fixed header height */
   }
 
 
   footer{
-    @include p-m(0.8em, 0);
+    @include p-m(1em, 0);
   }
