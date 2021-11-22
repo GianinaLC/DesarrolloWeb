@@ -1,19 +1,22 @@
 h1 {
   color: $color-title;
-  text-align: center;
   font-size: $title-size;
+  font-weight: 700;
+  text-transform: uppercase;
 }
   
 h2 {
   color: $color-title;
-  text-align: center;
+  margin: 2rem;
   font-size: $subtitle-size;
+  text-transform: uppercase;
 }
   
 h3 {
   color: $color-title;
-  text-align: center;
+  margin: 1.4rem;
   font-size: $another-title-size;
+  text-transform: uppercase;
 }
   
 body{

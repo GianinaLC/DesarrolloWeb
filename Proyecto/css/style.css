@@ -19,6 +19,61 @@ h3 {
 .my-pag {
   color: #8a0766; }
 
+/*------------el vino------------*/
+.hero-image {
+  background-image: url("../images/wine2.jpg");
+  width: 100%;
+  height: 500px;
+  opacity: .9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/*---------------------------tipos de vinos----------------------*/
+.container3 {
+  position: relative;
+  width: auto; }
+
+.image {
+  display: block;
+  width: 300px;
+  height: 400px; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #594C3B; }
+
+.container3:hover .overlay {
+  opacity: 1; }
+
+.text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+/*-------------------------------------------------*/
 /*-----card index color del vino-----*/
 .card-text {
   font-size: 1.2rem; }
@@ -36,10 +91,19 @@ h3 {
   height: 250px;
   border-radius: 50%; }
 
-.paragraph {
-  color: #cc0e41;
-  font-size: 1.6rem; }
+/*----segun su edad------*/
+/* //-------conditional---------
+$result: paragraph;
 
+.paragraph {
+  @if $result == paragraph{
+    color: #cc0e41;
+    font-size: 1.6rem;
+  } @else{
+    color: #BF7154;
+    font-size: 1.2rem;
+  }
+} */
 nav .active {
   border-bottom: 1px outset #ffffff; }
 
@@ -55,18 +119,21 @@ nav .active {
 } */
 h1 {
   color: #A61103 #66201a #d3a144;
-  text-align: center;
-  font-size: 2.5rem; }
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 h2 {
   color: #A61103 #66201a #d3a144;
-  text-align: center;
-  font-size: 2.2rem; }
+  margin: 2rem;
+  font-size: 2.2rem;
+  text-transform: uppercase; }
 
 h3 {
   color: #A61103 #66201a #d3a144;
-  text-align: center;
-  font-size: 1.8rem; }
+  margin: 1.4rem;
+  font-size: 1.8rem;
+  text-transform: uppercase; }
 
 body {
   font-family: "Jost", sans-serif;
@@ -89,7 +156,7 @@ p a {
   /* negative fixed header height */ }
 
 footer {
-  padding: 1em;
+  padding: 2em;
   margin: 0; }
 
 /*-------grid Maridaje-------------*/
