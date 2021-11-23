@@ -1,3 +1,23 @@
+.hero-image3{
+  @include background ("../images/cabecera-vinos.jpg");
+}
+
+/* .bg-text{
+  background-color: bisque;
+} */
+
+.img-1{
+  height: 450px;
+
+}
+
+.fondo2{
+  opacity: .8;
+}
+
+
+
+
 /*-------grid Maridaje-------------*/
   
   .contenedor-maridaje {
@@ -12,14 +32,14 @@
   
   .table-header{
     padding: 5px; 
-    background-color: #262626;
-    color:#F2E088;
-    border: 1px solid #F2F2F2;
-    font-weight: 300;
+    background-color: #BF7154;
+    color:#0D0D0D;
+    border: 2px solid #F2F2F2;
+    font-weight: 400;
   }
   
   .table-item{
-    background-color: #F2E088;
+    background-color: #BFB2A3;
     padding: 5px;
     border: 2px solid #F2F2F2;
     font-weight: 400;
