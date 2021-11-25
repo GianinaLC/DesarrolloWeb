@@ -1,6 +1,6 @@
 $title-size: 5rem;
 $subtitle-size: 2.2rem;
-$another-title-size: 1.8rem;
+$another-title-size: 1.7rem;
 
 $my-font:'Jost', sans-serif;
 $body-font-size: 1.5rem;
@@ -15,7 +15,7 @@ $footer-icon: 2.5rem;
 
 //----for----------
 
-$color-title: #A61103 #66201a #d3a144;
+$color-title: #A61103 #66201a #0D0D0D;
 
 @for $i from 1 through 3 {
 	h#{$i}{

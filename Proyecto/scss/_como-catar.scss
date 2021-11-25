@@ -1,3 +1,7 @@
+/*------------como catar------------*/
+.hero-image4{
+  @include background ("../images/cata-vino.jpg");
+}
 
 .img-cata{
     margin: 1rem;
