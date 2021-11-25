@@ -5,7 +5,7 @@ h2 {
   color: #66201a; }
 
 h3 {
-  color: #d3a144; }
+  color: #0D0D0D; }
 
 .youtube {
   color: #13e47b; }
@@ -20,10 +20,10 @@ h3 {
   color: #8a0766; }
 
 /*------------el vino------------*/
-.hero-image2 {
+.hero-image {
   width: 100%;
   height: 300px;
-  opacity: .9;
+  opacity: .8;
   position: relative;
   background-image: url("../images/wine2.jpg");
   background-position: center;
@@ -53,7 +53,7 @@ h3 {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 300px;
+  width: auto;
   height: 400px;
   opacity: 0;
   transition: .5s ease;
@@ -86,19 +86,6 @@ h3 {
   height: 250px;
   border-radius: 50%; }
 
-/*----segun su edad------*/
-/* //-------conditional---------
-$result: paragraph;
-
-.paragraph {
-  @if $result == paragraph{
-    color: #cc0e41;
-    font-size: 1.6rem;
-  } @else{
-    color: #BF7154;
-    font-size: 1.2rem;
-  }
-} */
 nav .active {
   border-bottom: 1px outset #ffffff; }
 
@@ -106,19 +93,19 @@ nav .active {
   background-color: black; }
 
 h1 {
-  color: #A61103 #66201a #d3a144;
+  color: #A61103 #66201a #0D0D0D;
   font-size: 5rem;
   font-weight: 700;
   text-transform: uppercase; }
 
 h2 {
-  color: #A61103 #66201a #d3a144;
+  color: #A61103 #66201a #0D0D0D;
   font-size: 2.2rem;
   text-transform: uppercase; }
 
 h3 {
-  color: #A61103 #66201a #d3a144;
-  font-size: 1.8rem;
+  color: #A61103 #66201a #0D0D0D;
+  font-size: 1.7rem;
   text-transform: uppercase; }
 
 body {
@@ -147,10 +134,10 @@ footer {
   margin: 0; }
 
 /*---background guia del vino---*/
-.hero-image3 {
+.hero-image2 {
   width: 100%;
   height: 300px;
-  opacity: .9;
+  opacity: .8;
   position: relative;
   background-image: url("../images/cabecera-vinos.jpg");
   background-position: center;
@@ -184,12 +171,12 @@ footer {
   font-weight: 400; }
 
 /*---servicio zoom on hover----*/
-.zoom-bg {
+.zoom-bg, .zoom-aroma {
   padding: 50px;
   width: 550px;
   height: auto;
   margin: 0 auto; }
-  .zoom-bg:hover {
+  .zoom-bg:hover, .zoom-aroma:hover {
     -ms-transform: scale(1.1);
     /* IE 9 */
     -webkit-transform: scale(1.1);
@@ -198,10 +185,10 @@ footer {
     transition: transform .2s; }
 
 @media screen and (max-width: 600px) {
-  .zoom-bg:hover {
+  .zoom-bg:hover, .zoom-aroma:hover {
     transform: none; } }
 
-.bg-servicio {
+.bg-col {
   background-color: #bfb2a344; }
 
 /*---------Guarda-----------*/
@@ -226,9 +213,25 @@ ul.icon-wine {
     ul.icon-wine li .icon-list {
       padding-right: 1rem; }
 
+/*------------aromas y defectos------------*/
+.hero-image3 {
+  width: 100%;
+  height: 300px;
+  opacity: .8;
+  position: relative;
+  background-image: url("../images/defecto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.fondo3 {
+  width: 100%;
+  height: 500px; }
+
 .circle-one {
-  background-color: #f0be93;
-  box-shadow: 0 4px 8px 0 rgba(155, 105, 62, 0.671), 0 6px 20px 0 rgba(134, 33, 33, 0.884);
+  color: #F2913D;
+  background-color: #9e062e;
+  box-shadow: 0 4px 8px 0 rgba(219, 186, 157, 0.671), 0 6px 20px 0 rgba(112, 67, 67, 0.884);
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -236,8 +239,9 @@ ul.icon-wine {
   line-height: 200px; }
 
 .circle-two {
-  background-color: #c97831;
-  box-shadow: 0 4px 8px 0 rgba(155, 105, 62, 0.671), 0 6px 20px 0 rgba(134, 33, 33, 0.884);
+  color: #F2913D;
+  background-color: #ac0833;
+  box-shadow: 0 4px 8px 0 rgba(219, 186, 157, 0.671), 0 6px 20px 0 rgba(112, 67, 67, 0.884);
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -245,13 +249,54 @@ ul.icon-wine {
   line-height: 200px; }
 
 .circle-three {
+  color: #F2913D;
   background-color: #8C0327;
-  box-shadow: 0 4px 8px 0 rgba(155, 105, 62, 0.671), 0 6px 20px 0 rgba(134, 33, 33, 0.884);
+  box-shadow: 0 4px 8px 0 rgba(219, 186, 157, 0.671), 0 6px 20px 0 rgba(112, 67, 67, 0.884);
   width: 200px;
   height: 200px;
   border-radius: 50%;
   text-align: center;
   line-height: 200px; }
+
+.bg-aromas-1 {
+  /* background-color: $bg-color; */
+  border-bottom: rgba(0, 0, 0, 0.808) 1px solid; }
+
+.bg-aromas-2 {
+  /* background-color: $bg-color; */
+  border-bottom: rgba(0, 0, 0, 0.808) 1px solid; }
+
+.bg-aromas-3 {
+  /* background-color: $bg-color; */
+  border-bottom: rgba(0, 0, 0, 0.808) 1px solid; }
+
+.animation-1, .animation-2, .animation-3 {
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-fill-mode: forwards; }
+
+.animation-2 {
+  animation-duration: 6s; }
+
+.animation-3 {
+  animation-duration: 7s; }
+
+/*-----defectos------*/
+@media screen and (max-width: 600px) {
+  .zoom-aroma:hover {
+    transform: none; } }
+
+/*------------como catar------------*/
+.hero-image4 {
+  width: 100%;
+  height: 300px;
+  opacity: .8;
+  position: relative;
+  background-image: url("../images/cata-vino.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .img-cata {
   margin: 1rem; }
@@ -325,6 +370,17 @@ ul.icon-wine {
   .info__mas:hover {
     width: 80%;
     transform: translate(10px); }
+
+/*------------contacto------------*/
+.hero-image5 {
+  width: 100%;
+  height: 300px;
+  opacity: .8;
+  position: relative;
+  background-image: url("../images/contacto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .bg-form {
   background-color: #BFB2A3;

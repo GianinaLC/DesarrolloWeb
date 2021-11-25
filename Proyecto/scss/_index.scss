@@ -1,5 +1,5 @@
 /*------------el vino------------*/
-.hero-image2{
+.hero-image{
   @include background ('../images/wine2.jpg');
 }
 
@@ -29,7 +29,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  width: 300px;
+  width: auto;
   height: 400px;
   opacity: 0;
   transition: .5s ease;
@@ -68,19 +68,3 @@
   border-radius: 50%;
 }
 
-
-/*----segun su edad------*/
-
-
-/* //-------conditional---------
-$result: paragraph;
-
-.paragraph {
-  @if $result == paragraph{
-    color: #cc0e41;
-    font-size: 1.6rem;
-  } @else{
-    color: #BF7154;
-    font-size: 1.2rem;
-  }
-} */
