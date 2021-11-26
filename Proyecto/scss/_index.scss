@@ -68,3 +68,9 @@
   border-radius: 50%;
 }
 
+.bg-age{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.589);
+  &:hover{
+    box-shadow: 0 4px 8px 0 rgba(219, 186, 157, 0.671), 0 6px 20px 0 rgba(124, 103, 103, 0.884);
+  }
+}

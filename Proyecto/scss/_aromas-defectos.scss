@@ -10,7 +10,7 @@
 
 //maps------------titulo tipos de aromas---
 
-$colors: (one:#9e062e, two:#ac0833, three:#8C0327,);
+$colors: (one:#d13f09, two:#590202, three:#8C0327,);
 @each $name-color, $bg-color in $colors{
     .circle-#{$name-color}{
         color: #F2913D;

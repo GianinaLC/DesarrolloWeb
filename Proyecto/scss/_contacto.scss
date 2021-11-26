@@ -4,28 +4,31 @@
   }
 
 
-
 // ----operaciones---------------
 $ancho: 600px;
 
 .bg-form{
 	background-color: #BFB2A3;
-	box-shadow: 0 4px 8px 0 rgba(242, 177, 121, 0.671), 0 6px 20px 0 rgba(156, 56, 56, 0.884);
 	border-radius:  10px;
 }
 
 // ----each-----botones----------
 
-$btn-colors: (send:#f442b0, reset:#bb0685b2, check:#a510785b,);
+$btn-colors: (send:#BF7154, reset:#bf7154a2, check:#BF7154,);
 @each $name-color, $bg-color-btn in $btn-colors{
     .btn-color-#{$name-color}{
+		color: #fff;
         background-color: $bg-color-btn;
 		border-radius: 10px 100px / 120px;
 		border: solid 1px #BF7154;
 		width: $ancho/3;
   			&:hover{
-    		background-color: #BFB2A3;
+			color:#fff ;
+    		background-color: #590202;
     		border: solid 1px #594C3B;
+			&:focus{
+				background-color: #BFB2A3;
+			}
     	}
 	}
 }
@@ -33,10 +36,4 @@ $btn-colors: (send:#f442b0, reset:#bb0685b2, check:#a510785b,);
 .btn-color-check {
 	width: ($ancho/6)-70;
 }
-
-.bg-ifr{
-	box-shadow: 0 4px 8px 0 rgba(88, 47, 11, 0.671), 0 6px 20px 0 rgba(77, 33, 33, 0.884);
-}
-
-
 
