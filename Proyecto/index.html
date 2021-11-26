@@ -8,6 +8,7 @@
     <meta name="keywords"  content="vino, color del vino, tinto, aromas del vino, cata, tipos de vinos">
     <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -72,7 +73,7 @@
             <h2 class="mx-auto mt-5 mb-4">¿qué es el vino?</h2>
             <div class="row">
                 <div class="col-md-12">
-                    <p>
+                    <p class="animate__animated animate__backInRight">
                         El vino es la bebida que se obtiene de la <strong><a class="articles" href="https://www.lev2050.com/la-fermentacion-alcoholica-en-el-vino-que-es-y-por-que-su-desarrollo-afecta-la-calidad-de-los-vinos/">fermentación alcohólica</a></strong> 
                         total o parcial, del jugo de uvas maduras. El vino esta formado por diferentes componentes, de los cuales el principal es el agua, que esta presente al rededor de un 85%.
                          El segundo componente más importante es el alcohol, que surge gracias a la
@@ -81,7 +82,7 @@
                 </div>
             
                 <div class="col-md-12">
-                    <p>
+                    <p class="animate__animated animate__backInLeft">
                         La graduación del vino suele variar entre el 7% y el 15%, 
                         dependiendo del tipo de vino. El resto de componentes aparecen en menor cantidad, 
                         como azúcares, influyen en el sabor del vino; taninos, que le dan color y textura al vino; sustancias volátiles, que constituyen parte del aroma; ácidos, que participan también en el sabor del vino; y algunos otros
@@ -164,25 +165,25 @@
             <!--clasificacion por su edad---------------------------------------------------------------------------------->
             <h3 class="mt-5 mb-4">clasificación según su edad</h3>
                 <!--definicion--------------------------------------------------->
-                <div class="row shadow p-3 mb-5 bg-body rounded">
-                    <div class="col-12 mb-5">
+                <div class="row mb-5 rounded animate__backInRight">
+                    <div class="col-12 p-2 mb-5 bg-age rounded">
                         <strong>JOVEN:</strong> Estos vinos han pasado directamente de sus depósitos a
                         la botella sin pasar por barrica. En estos vinos son destacables los aromas primarios procedentes de la uva. 
                         Podemos encontrar vinos jóvenes tanto entre los tintos como entre los blancos o los rosados.
                     </div>
 
-                    <div class="col-12 mb-5">
+                    <div class="col-12 p-2 mb-5 bg-age rounded">
                         <strong>CRIANZA:</strong> Estos vinos tienen una crianza mínima en barrica de 6
                         meses y hasta un máximo de 2 años en botella. Los vinos con crianza más comunes, son los
                         tintos, aunque cada vez es más frecuente encontrar vinos blancos con crianza.
                     </div>
 
-                    <div class="col-12 mb-5">
+                    <div class="col-12 p-2 mb-5 bg-age rounded">
                         <strong>RESERVA:</strong> Son vinos con un mínimo de 12 meses en barrica y un máximo de
                         3 años en botella.
                     </div>
 
-                    <div class="col-12 mb-5">
+                    <div class="col-12 p-2 mb-5 bg-age rounded">
                         <strong>GRAN RESERVA:</strong> Deben tener un mínimo de 2 años en barrica y
                         un máximo de 5 años en botella.
                     </div>
@@ -191,26 +192,37 @@
     </main>
                 
     <!--footer-------------------------------------------------------------------------------------------------------------------->
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <div class="col-12">
-                        <p class="text-center m-0">Comparte en redes y seguinos</p>
-                        <p class="text-center m-0">Copyright 2021</p>
-                    </div>
-                </div>
+    <footer class="pb-0">
+        <div class="container">
+            <div class="d-flex bd-highlight flex-wrap justify-content-center pt-4">
+				<div class="py-2 align-items-center">
+					<div class="pt-3">
+						<p class="text-center px-5">
+							<i class="fas fa-map-marked-alt me-3"></i>	Ciudad de Mendoza - Argentina
+						</p>
+					</div>
+				</div>
 
-                <div class="col-md-6 col-xs-12">
-                    <div class="col-12 d-flex flex-row justify-content-around ">
-                        <a href="https://www.facebook.com/" class="icon-face"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/" class="icon-ig"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/" class="icon-tw"><i class="fab fa-twitter"></i></a>
-                    </div>
-                   
-                </div>
-            </div>
-        </div>
+				<div class=" py-2 ">
+					<a href="https://www.facebook.com/"><i class="fab fa-facebook m-3"></i></a>
+					<a href="https://www.instagram.com/"><i class="fab fa-instagram m-3"></i></a>
+					<a href="https://twitter.com/"><i class="fab fa-twitter m-3"></i></a>
+					<a href="./pages/contacto.html"><i class="fas fa-envelope m-3"></i></a>
+				</div>
+
+				<div class="py-2 align-items-center">
+					<div class="pt-3">
+						<p class="text-center px-5">
+							<i class="fas fa-share me-3"></i>Comparte en redes y seguinos
+						</p>
+					</div>
+				</div>
+        	</div>
+
+			<div class="text-center p-2">
+				<p>Copyright 2021 | Todos los derechos reservados</p>
+			</div>
+		</div>
     </footer>
 
     <script src="./libs/jquery/jquery-3.6.0.min.js"></script>

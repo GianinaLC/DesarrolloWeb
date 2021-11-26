@@ -8,6 +8,7 @@
     <meta name="keywords"  content="vino, malbec, tinto, vino blanco, guarda, maridaje, vinoteca">
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -66,14 +67,14 @@
         </div>
         <article class="container">
             <div>
-                    <h2 id="maridaje" class="mt-5 mb-4">MARIDAJE</h2>
-                    <p>
-                        El maridaje entre el vino y la comida es el proceso de unir un alimento con un vino con
-                        la intención de realzar el placer de comerlos.
-                        ¿Cómo elegir el mejor vino para cada comida?
-                        Hay que tener en cuenta un principio indiscutible: la subjetividad es todo; no hay nadie mejor que nosotros mismos para determinar lo que nos gusta.
-                        Sin embargo, para ir entrenando el paladar lo mejor es empezar por lo seguro y aprender a encontrar los nuevos sabores en acuerdos clásicos como un Vino Tinto con carnes rojas, Vino Blanco con pescados y un Tardío con postres frutales.
-                    </p>
+                <h2 id="maridaje" class="mt-5 mb-4">MARIDAJE</h2>
+                <p class="animate__animated animate__backInUp">
+                    El maridaje entre el vino y la comida es el proceso de unir un alimento con un vino con
+                    la intención de realzar el placer de comerlos.
+                    ¿Cómo elegir el mejor vino para cada comida?
+                    Hay que tener en cuenta un principio indiscutible: la subjetividad es todo; no hay nadie mejor que nosotros mismos para determinar lo que nos gusta.
+                    Sin embargo, para ir entrenando el paladar lo mejor es empezar por lo seguro y aprender a encontrar los nuevos sabores en acuerdos clásicos como un Vino Tinto con carnes rojas, Vino Blanco con pescados y un Tardío con postres frutales.
+                </p>
             </div>
             
             <div class="row table-responsive-sm">
@@ -200,25 +201,37 @@
     </main>
 
     <!--footer-------------------------------------------------------------------------------------------------------------------->
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <div class="col-12">
-                        <p class="text-center m-0">Comparte en redes y seguinos</p>
-                        <p class="text-center m-0">Copyright 2021</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-sm-12">
-                    <div class="col-12 d-flex flex-row justify-content-around ">
-                        <a href="https://www.facebook.com/" class="icon-face"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/" class="icon-ig"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/" class="icon-tw"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <footer class="pb-0">
+        <div class="container">
+            <div class="d-flex bd-highlight flex-wrap justify-content-center pt-4">
+				<div class="py-2 align-items-center">
+					<div class="pt-3">
+						<p class="text-center px-5">
+							<i class="fas fa-map-marked-alt me-3"></i>	Ciudad de Mendoza - Argentina
+						</p>
+					</div>
+				</div>
+
+				<div class=" py-2 ">
+					<a href="https://www.facebook.com/"><i class="fab fa-facebook m-3"></i></a>
+					<a href="https://www.instagram.com/"><i class="fab fa-instagram m-3"></i></a>
+					<a href="https://twitter.com/"><i class="fab fa-twitter m-3"></i></a>
+					<a href="./contacto.html"><i class="fas fa-envelope m-3"></i></a>
+				</div>
+
+				<div class="py-2 align-items-center">
+					<div class="pt-3">
+						<p class="text-center px-5">
+							<i class="fas fa-share me-3"></i>Comparte en redes y seguinos
+						</p>
+					</div>
+				</div>
+        	</div>
+
+			<div class="text-center p-2">
+				<p>Copyright 2021 | Todos los derechos reservados</p>
+			</div>
+		</div>
     </footer>
     
     <script src="../libs/jquery/jquery-3.6.0.min.js"></script>

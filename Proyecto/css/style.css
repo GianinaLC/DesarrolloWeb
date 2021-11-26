@@ -86,6 +86,11 @@ h3 {
   height: 250px;
   border-radius: 50%; }
 
+.bg-age {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.589); }
+  .bg-age:hover {
+    box-shadow: 0 4px 8px 0 rgba(219, 186, 157, 0.671), 0 6px 20px 0 rgba(124, 103, 103, 0.884); }
+
 nav .active {
   border-bottom: 1px outset #ffffff; }
 
@@ -94,7 +99,7 @@ nav .active {
 
 h1 {
   color: #A61103 #66201a #0D0D0D;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase; }
 
@@ -129,10 +134,6 @@ p a {
   margin: -105px 0 0;
   /* negative fixed header height */ }
 
-footer {
-  padding: 2em;
-  margin: 0; }
-
 /*---background guia del vino---*/
 .hero-image2 {
   width: 100%;
@@ -143,10 +144,6 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-
-/*---imagen antes de servicio---*/
-.fondo2 {
-  opacity: .8; }
 
 /*-------grid Maridaje-------------*/
 .contenedor-maridaje {
@@ -230,7 +227,7 @@ ul.icon-wine {
 
 .circle-one {
   color: #F2913D;
-  background-color: #9e062e;
+  background-color: #d13f09;
   box-shadow: 0 4px 8px 0 rgba(219, 186, 157, 0.671), 0 6px 20px 0 rgba(112, 67, 67, 0.884);
   width: 200px;
   height: 200px;
@@ -240,7 +237,7 @@ ul.icon-wine {
 
 .circle-two {
   color: #F2913D;
-  background-color: #ac0833;
+  background-color: #590202;
   box-shadow: 0 4px 8px 0 rgba(219, 186, 157, 0.671), 0 6px 20px 0 rgba(112, 67, 67, 0.884);
   width: 200px;
   height: 200px;
@@ -342,46 +339,54 @@ ul.icon-wine {
 
 .bg-form {
   background-color: #BFB2A3;
-  box-shadow: 0 4px 8px 0 rgba(242, 177, 121, 0.671), 0 6px 20px 0 rgba(156, 56, 56, 0.884);
   border-radius: 10px; }
 
 .btn-color-send {
-  background-color: #f442b0;
+  color: #fff;
+  background-color: #BF7154;
   border-radius: 10px 100px / 120px;
   border: solid 1px #BF7154;
   width: 200px; }
   .btn-color-send:hover {
-    background-color: #BFB2A3;
+    color: #fff;
+    background-color: #590202;
     border: solid 1px #594C3B; }
+    .btn-color-send:hover:focus {
+      background-color: #BFB2A3; }
 
 .btn-color-reset {
-  background-color: #bb0685b2;
+  color: #fff;
+  background-color: #bf7154a2;
   border-radius: 10px 100px / 120px;
   border: solid 1px #BF7154;
   width: 200px; }
   .btn-color-reset:hover {
-    background-color: #BFB2A3;
+    color: #fff;
+    background-color: #590202;
     border: solid 1px #594C3B; }
+    .btn-color-reset:hover:focus {
+      background-color: #BFB2A3; }
 
 .btn-color-check {
-  background-color: #a510785b;
+  color: #fff;
+  background-color: #BF7154;
   border-radius: 10px 100px / 120px;
   border: solid 1px #BF7154;
   width: 200px; }
   .btn-color-check:hover {
-    background-color: #BFB2A3;
+    color: #fff;
+    background-color: #590202;
     border: solid 1px #594C3B; }
+    .btn-color-check:hover:focus {
+      background-color: #BFB2A3; }
 
 .btn-color-check {
   width: 30px; }
 
-.bg-ifr {
-  box-shadow: 0 4px 8px 0 rgba(88, 47, 11, 0.671), 0 6px 20px 0 rgba(77, 33, 33, 0.884); }
-
 footer {
   font-family: "Oswald", sans-serif;
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 300;
   color: #A68053;
   background: linear-gradient(90deg, #090303 0%, #4d2424 50%, #4a0000 100%); }
   footer a {
