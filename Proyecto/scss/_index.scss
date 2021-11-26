@@ -1,6 +1,6 @@
 /*------------el vino------------*/
 .hero-image{
-  @include background ('../images/wine2.jpg');
+  @include background ("../images/wine2.jpg");
 }
 
 .hero-text {

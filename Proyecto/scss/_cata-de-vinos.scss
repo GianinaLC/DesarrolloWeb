@@ -1,0 +1,48 @@
+/*------------como catar------------*/
+.hero-image4{
+  @include background ("../images/cata-vino.jpg");
+}
+
+
+
+
+.box-flex{
+  width: 380px;
+}
+
+.cata-bg{
+    background-color: #BFB2A3 ;
+    &:hover{
+      box-shadow: 0 4px 8px 0 #BFB2A3, 0 6px 20px 0 #bf715467;
+    }
+}
+
+
+.div1 {
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+  }
+
+  
+  @keyframes example {
+    from {left: -100px;}
+    to {left: 0px;}
+  }
+
+
+
+/*-------mas info - transformacion------*/
+
+.info__mas {
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 30px;
+    transition: 1s;
+        &:hover {
+        width:  80%;
+        transform: translate( 10px);
+    }
+}
