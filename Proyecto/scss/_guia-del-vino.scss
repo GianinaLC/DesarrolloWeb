@@ -1,38 +1,39 @@
 /*---background guia del vino---*/
-.hero-image2{
+/*el extend es para el estilo del h1*/
+.cover-page-3{
   @include background ("../images/cabecera-vinos.jpg");
+  @extend .cover-page-2;
 }
-
 
 /*-------grid Maridaje-------------*/
   
-  .contenedor-maridaje {
-    display: grid;  
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, auto, 1fr);
-    justify-items: stretch;
-    text-align: center;  
-    padding: 0;
-    }
+.contenedor-maridaje {
+  display: grid;  
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto, 1fr);
+  justify-items: stretch;
+  text-align: center;  
+  padding: 0;
+}
   
   
-  .table-header{
-    padding: 5px; 
-    background-color: #BF7154;
-    color:#0D0D0D;
-    border: 1px solid #bfb2a3;
-    font-weight: 400;
-  }
+.table-header{
+  padding: 5px; 
+  background-color: #0D0D0D;
+  color: #D9B26A;
+  border: 1px solid #594622;
+  font-weight: 400;
+}
   
-  .table-item{
-    background-color: #bfb2a344;
-    padding: 5px;
-    border: 1px solid #bfb2a3;
-    font-weight: 400;
-  }
+.table-item{
+  background-color: #D9B26A;
+  padding: 5px;
+  border: 1px solid #594622;
+  font-weight: 400;
+}
   
 
-  /*---servicio zoom on hover----*/
+/*---servicio zoom on hover----*/
 .zoom-bg {
   padding: 50px;
   width: 550px;
@@ -43,17 +44,14 @@
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
     transition: transform .2s;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .zoom-bg:hover {
-    transform: none;
+    @media screen and (max-width: 600px) {
+        transform: none;
+    }
   }
 }
 
 .bg-col{
-  background-color: #bfb2a344;
+  background-color: #D9B26A;
 }
   
 
@@ -75,14 +73,13 @@
 ul.icon-wine {
   padding: 1rem;
   list-style-type: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   li{
-    margin-right: 10px;
+    margin-right: 0.6rem;
     padding-left: 1rem;
     margin-bottom: 1rem;
     .icon-list{
       padding-right: 1rem;
-      
     }
   }
 }

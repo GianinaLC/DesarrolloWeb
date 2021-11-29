@@ -1,6 +1,8 @@
 /*------------contacto------------*/
-.hero-image5{
+/*el extend es para el estilo del h1*/
+.cover-page-6{
 	@include background ("../images/cabecera-contact.png");
+	@extend .cover-page-2;
   }
 
 
@@ -8,24 +10,25 @@
 $ancho: 600px;
 
 .bg-form{
-	background-color: #BFB2A3;
-	border-radius:  10px;
+	background-color: #D9B26A;
+	border: 1px solid #594622;
+	border-radius: 1.5rem;
 }
 
 // ----each-----botones----------
 
-$btn-colors: (send:#BF7154, reset:#bf7154a2, check:#BF7154,);
+$btn-colors: (send:#594622, reset:#594622bd, check:#BF7154,);
 @each $name-color, $bg-color-btn in $btn-colors{
     .btn-color-#{$name-color}{
 		color: #fff;
         background-color: $bg-color-btn;
 		border-radius: 10px 100px / 120px;
-		border: solid 1px #BF7154;
+		border: solid 1px #594622;
 		width: $ancho/3;
   			&:hover{
 			color:#fff ;
     		background-color: #590202;
-    		border: solid 1px #594C3B;
+    		border: solid 1px #594622;
 			&:focus{
 				background-color: #BFB2A3;
 			}
