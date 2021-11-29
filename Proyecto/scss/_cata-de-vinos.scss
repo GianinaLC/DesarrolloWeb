@@ -3,9 +3,6 @@
   @include background ("../images/cata-vino.jpg");
 }
 
-
-
-
 .box-flex{
   width: 380px;
 }
@@ -24,7 +21,6 @@
     animation-duration: 3s;  
     animation-fill-mode: forwards;
   }
-
   
   @keyframes example {
     from {left: -100px;}
@@ -32,17 +28,3 @@
   }
 
 
-
-/*-------mas info - transformacion------*/
-
-.info__mas {
-    overflow: hidden;
-    margin-bottom: 10px;
-    width: 150px;
-    height: 30px;
-    transition: 1s;
-        &:hover {
-        width:  80%;
-        transform: translate( 10px);
-    }
-}
