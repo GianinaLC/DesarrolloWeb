@@ -1,6 +1,6 @@
 /*------------aromas y defectos------------*/
 .hero-image3{
-    @include background ("../images/defecto.jpg");
+    @include background ("../images/def-aro.png");
   }
 
 .fondo3{
@@ -8,7 +8,7 @@
     height: 500px;
 }
 
-//maps------------titulo tipos de aromas---
+//maps------------título tipos de aromas---
 
 $colors: (one:#d13f09, two:#590202, three:#8C0327,);
 @each $name-color, $bg-color in $colors{
@@ -35,30 +35,31 @@ $colors: (1:#f2913d86, 2:#f2b17986, 3:#8c441b86,);
 }
 
 
-  .animation-1 {
-    position: relative;
-    animation-name: example;
-    animation-duration: 5s;  
-    animation-fill-mode: forwards;
-  }  
+.animation-1 {
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;  
+  animation-fill-mode: forwards;
+}  
 
-  .animation-2{
-    @extend .animation-1;
-    animation-duration: 6s;
-  }
+.animation-2{
+  @extend .animation-1;
+  animation-duration: 6s;
+}
 
-  .animation-3{
-    @extend .animation-1;
-    animation-duration: 7s; 
-  }
-
-  /*-----defectos------*/
+.animation-3{
+  @extend .animation-1;
+  animation-duration: 7s; 
+}
 
 
-  .zoom-aroma {
-    @extend .zoom-bg;
+/*-----defectos------*/
+
+
+.zoom-aroma {
+  @extend .zoom-bg;
       
-    @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .zoom-aroma:hover {
       transform: none;
     }

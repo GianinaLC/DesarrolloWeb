@@ -1,15 +1,15 @@
+/*---cabeceras-----*/
 @mixin background ($imgpath,$position:center,$repeat: no-repeat, $size:cover){
-        width: 100%;
-        height: 300px;
-        opacity: .8;
-        position: relative;
+    width: 100%;
+    height: 300px;
+    position: relative;
         
-        background: {
-            image: url($imgpath);
-            position: $position;
-            repeat: $repeat;
-            size:$size;
-        }
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+        size:$size;
+    }
 }
 
 

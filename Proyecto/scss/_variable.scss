@@ -5,8 +5,6 @@ $another-title-size: 1.7rem;
 $my-font:'Jost', sans-serif;
 $body-font-size: 1.5rem;
 
-$color-btn: #594C3B;
-
 
 $footer-font: 'Oswald', sans-serif;
 $footer-color: #A68053;
@@ -24,19 +22,6 @@ $color-title: #A61103 #66201a #0D0D0D;
 }
 
 
-//----each------------------------------
-$colors: (
-	youtube:#13e47b,
-	articles: #FFAC83,
-	commynity: #3F78C9,
-	my-pag: #8a0766,
-);
-
-@each $name, $color in $colors {
-	.#{$name} {
-		color: $color;
-	}
-}
 
 
   
