@@ -9,39 +9,47 @@ h3 {
   color: #0D0D0D; }
 
 /*------------home------------*/
-.hero-imagex {
+.cover-page {
   background-image: url("../images/guarda2.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
+  .cover-page h1 {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media screen and (max-width: 600px) {
+      .cover-page h1 {
+        top: 55%; } }
 
-.hero-textx {
-  text-align: center;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.bg-home-1 {
+  background-color: black;
   color: white; }
-  @media screen and (max-width: 600px) {
-    .hero-textx {
-      top: 55%; } }
 
-.bg-home {
-  background-color: #bfb2a3b0; }
+.animate__animated.animate__zoomIn {
+  --animate-duration: 5s; }
 
+/*---prox eventos---*/
 .bg-box-1 {
   width: 300px;
   text-align: center; }
   .bg-box-1:hover {
     box-shadow: 0 4px 8px 0 #BFB2A3, 0 6px 10px 0 #bf715467; }
 
-.bg-home-2 {
-  background-color: black;
-  color: white; }
+.animation-4 {
+  animation-duration: 10s; }
+
+@keyframes example {
+  from {
+    left: -100px; }
+  to {
+    left: 0px; } }
 
 /*------------el vino------------*/
-.hero-image {
+.cover-page-2, .cover-page-3, .cover-page-4, .cover-page-5, .cover-page-6 {
   width: 100%;
   height: 300px;
   position: relative;
@@ -49,23 +57,21 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  .cover-page-2 h1, .cover-page-3 h1, .cover-page-4 h1, .cover-page-5 h1, .cover-page-6 h1 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 /*---------------------------tipos de vinos----------------------*/
-.container3 {
+.container-copas {
   position: relative;
   width: auto; }
-
-.image {
-  display: block;
-  width: 300px;
-  height: 400px; }
+  .container-copas img {
+    display: block;
+    width: 300px;
+    height: 400px; }
 
 .overlay {
   position: absolute;
@@ -77,35 +83,22 @@ h3 {
   height: 400px;
   opacity: 0;
   transition: .5s ease;
-  background-color: #594C3B; }
+  background-color: #0D0D0D; }
+  .overlay div {
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
-.container3:hover .overlay {
+.container-copas:hover .overlay {
   opacity: 1; }
 
-.text {
-  color: white;
-  font-size: 16px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-/*-----btn card colores del vino-----*/
-.btn-card a {
-  color: #BF7950;
-  text-decoration: none; }
-
-.btn-card:hover {
-  background-color: #e9ddbb; }
-
-.img-circle {
-  width: 430px;
-  height: 250px;
-  border-radius: 50%; }
-
+/*-----edad del vino-----*/
 .bg-age {
   border-bottom: 1px solid rgba(0, 0, 0, 0.589); }
   .bg-age:hover {
@@ -156,7 +149,8 @@ p a {
   /* negative fixed header height */ }
 
 /*---background guia del vino---*/
-.hero-image2 {
+/*el extend es para el estilo del h1*/
+.cover-page-3 {
   width: 100%;
   height: 300px;
   position: relative;
@@ -176,15 +170,15 @@ p a {
 
 .table-header {
   padding: 5px;
-  background-color: #BF7154;
-  color: #0D0D0D;
-  border: 1px solid #bfb2a3;
+  background-color: #0D0D0D;
+  color: #D9B26A;
+  border: 1px solid #594622;
   font-weight: 400; }
 
 .table-item {
-  background-color: #bfb2a344;
+  background-color: #D9B26A;
   padding: 5px;
-  border: 1px solid #bfb2a3;
+  border: 1px solid #594622;
   font-weight: 400; }
 
 /*---servicio zoom on hover----*/
@@ -200,13 +194,12 @@ p a {
     /* Safari 3-8 */
     transform: scale(1.1);
     transition: transform .2s; }
-
-@media screen and (max-width: 600px) {
-  .zoom-bg:hover, .zoom-aroma:hover {
-    transform: none; } }
+    @media screen and (max-width: 600px) {
+      .zoom-bg:hover, .zoom-aroma:hover {
+        transform: none; } }
 
 .bg-col {
-  background-color: #bfb2a344; }
+  background-color: #D9B26A; }
 
 /*---------Guarda-----------*/
 .transform {
@@ -222,16 +215,17 @@ p a {
 ul.icon-wine {
   padding: 1rem;
   list-style-type: none;
-  font-size: 20px; }
+  font-size: 1.25rem; }
   ul.icon-wine li {
-    margin-right: 10px;
+    margin-right: 0.6rem;
     padding-left: 1rem;
     margin-bottom: 1rem; }
     ul.icon-wine li .icon-list {
       padding-right: 1rem; }
 
 /*------------aromas y defectos------------*/
-.hero-image3 {
+/*el extend es para el estilo del h1*/
+.cover-page-4 {
   width: 100%;
   height: 300px;
   position: relative;
@@ -240,13 +234,9 @@ ul.icon-wine {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.fondo3 {
-  width: 100%;
-  height: 500px; }
-
 .circle-one {
   color: #F2913D;
-  background-color: #d13f09;
+  background-color: #A61103;
   box-shadow: 0 4px 8px 0 rgba(219, 186, 157, 0.671), 0 6px 20px 0 rgba(112, 67, 67, 0.884);
   width: 200px;
   height: 200px;
@@ -266,7 +256,7 @@ ul.icon-wine {
 
 .circle-three {
   color: #F2913D;
-  background-color: #8C0327;
+  background-color: #594622;
   box-shadow: 0 4px 8px 0 rgba(219, 186, 157, 0.671), 0 6px 20px 0 rgba(112, 67, 67, 0.884);
   width: 200px;
   height: 200px;
@@ -274,19 +264,10 @@ ul.icon-wine {
   text-align: center;
   line-height: 200px; }
 
-.bg-aromas-1 {
-  /* background-color: $bg-color; */
+.bg-aromas {
   border-bottom: rgba(0, 0, 0, 0.808) 1px solid; }
 
-.bg-aromas-2 {
-  /* background-color: $bg-color; */
-  border-bottom: rgba(0, 0, 0, 0.808) 1px solid; }
-
-.bg-aromas-3 {
-  /* background-color: $bg-color; */
-  border-bottom: rgba(0, 0, 0, 0.808) 1px solid; }
-
-.animation-1, .animation-2, .animation-3 {
+.animation-1, .animation-4, .animation-2, .animation-3 {
   position: relative;
   animation-name: example;
   animation-duration: 5s;
@@ -298,13 +279,16 @@ ul.icon-wine {
 .animation-3 {
   animation-duration: 7s; }
 
-/*-----defectos------*/
-@media screen and (max-width: 600px) {
-  .zoom-aroma .zoom-aroma:hover {
-    transform: none; } }
+@keyframes example {
+  from {
+    left: -100px; }
+  to {
+    left: 0px; } }
 
+/*-----defectos------*/
 /*------------como catar------------*/
-.hero-image4 {
+/*el extend es para el estilo del h1*/
+.cover-page-5 {
   width: 100%;
   height: 300px;
   position: relative;
@@ -317,24 +301,13 @@ ul.icon-wine {
   width: 380px; }
 
 .cata-bg {
-  background-color: #BFB2A3; }
+  background-color: #D9B26A; }
   .cata-bg:hover {
     box-shadow: 0 4px 8px 0 #BFB2A3, 0 6px 20px 0 #bf715467; }
 
-.div1 {
-  position: relative;
-  animation-name: example;
-  animation-duration: 3s;
-  animation-fill-mode: forwards; }
-
-@keyframes example {
-  from {
-    left: -100px; }
-  to {
-    left: 0px; } }
-
 /*------------contacto------------*/
-.hero-image5 {
+/*el extend es para el estilo del h1*/
+.cover-page-6 {
   width: 100%;
   height: 300px;
   position: relative;
@@ -344,32 +317,33 @@ ul.icon-wine {
   background-size: cover; }
 
 .bg-form {
-  background-color: #BFB2A3;
-  border-radius: 10px; }
+  background-color: #D9B26A;
+  border: 1px solid #594622;
+  border-radius: 1.5rem; }
 
 .btn-color-send {
   color: #fff;
-  background-color: #BF7154;
+  background-color: #594622;
   border-radius: 10px 100px / 120px;
-  border: solid 1px #BF7154;
+  border: solid 1px #594622;
   width: 200px; }
   .btn-color-send:hover {
     color: #fff;
     background-color: #590202;
-    border: solid 1px #594C3B; }
+    border: solid 1px #594622; }
     .btn-color-send:hover:focus {
       background-color: #BFB2A3; }
 
 .btn-color-reset {
   color: #fff;
-  background-color: #bf7154a2;
+  background-color: #594622bd;
   border-radius: 10px 100px / 120px;
-  border: solid 1px #BF7154;
+  border: solid 1px #594622;
   width: 200px; }
   .btn-color-reset:hover {
     color: #fff;
     background-color: #590202;
-    border: solid 1px #594C3B; }
+    border: solid 1px #594622; }
     .btn-color-reset:hover:focus {
       background-color: #BFB2A3; }
 
@@ -377,12 +351,12 @@ ul.icon-wine {
   color: #fff;
   background-color: #BF7154;
   border-radius: 10px 100px / 120px;
-  border: solid 1px #BF7154;
+  border: solid 1px #594622;
   width: 200px; }
   .btn-color-check:hover {
     color: #fff;
     background-color: #590202;
-    border: solid 1px #594C3B; }
+    border: solid 1px #594622; }
     .btn-color-check:hover:focus {
       background-color: #BFB2A3; }
 
