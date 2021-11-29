@@ -56,12 +56,12 @@ $colors: (1:#f2913d86, 2:#f2b17986, 3:#8c441b86,);
 
 
   .zoom-aroma {
-      @extend .zoom-bg;
-  }
-  
-  @media screen and (max-width: 600px) {
+    @extend .zoom-bg;
+      
+    @media screen and (max-width: 600px) {
     .zoom-aroma:hover {
       transform: none;
     }
   }
+}
   
