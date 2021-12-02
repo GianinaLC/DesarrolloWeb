@@ -159,28 +159,6 @@ p a {
   background-repeat: no-repeat;
   background-size: cover; }
 
-/*-------grid Maridaje-------------*/
-.contenedor-maridaje {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, auto, 1fr);
-  justify-items: stretch;
-  text-align: center;
-  padding: 0; }
-
-.table-header {
-  padding: 5px;
-  background-color: #0D0D0D;
-  color: #D9B26A;
-  border: 1px solid #594622;
-  font-weight: 400; }
-
-.table-item {
-  background-color: #D9B26A;
-  padding: 5px;
-  border: 1px solid #594622;
-  font-weight: 400; }
-
 /*---servicio zoom on hover----*/
 .zoom-bg, .zoom-aroma {
   padding: 50px;
